@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background-page: #030B10;
   --poppins-font: 'Poppins', sans-serif;
   --inter-font: 'Inter', sans-serif;
+  --background-page: #030B10;
 }
 
 body {
@@ -13,6 +13,27 @@ body {
   background-color: var(--background-page);
 }
 
-.header {
+.header{
   font-family: var(--inter-font);
+}
+
+h1 {
+  background: linear-gradient(to right, #fff, #3B78A4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.svg_animated{
+  top: 0.75rem;
+  transition: all .16s ease-in-out;
+  animation: scroll 1s .14s ease-in-out alternate infinite;
+}
+
+@keyframes scroll {
+  from {
+    top: 0.75rem;
+  }
+  to{
+    top: 2.5rem;
+  }
 }

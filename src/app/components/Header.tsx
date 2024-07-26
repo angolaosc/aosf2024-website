@@ -24,7 +24,7 @@ export default function Header() {
   const scrollNavbar = () => {
     if (!navbarRef.current) return;
 
-    if (window.scrollY === 0) {
+    if (window.scrollY >= 1) {
       navbarRef.current.classList.remove("max-w-full");
       navbarRef.current.classList.add("max-w-7xl");
     } else {
@@ -39,7 +39,7 @@ export default function Header() {
     <header>
       <div
         ref={navbarRef}
-        className="header transition-all fixed top-0 left-0 right-0 max-w-7xl py-4 m-auto items-center flex px-4 justify-between w-full border-b border-[#111D25]"
+        className="header z-20 bg-[#030B10] transition-all fixed top-0 left-0 right-0 max-w-7xl py-4 m-auto items-center flex px-4 justify-between w-full border-b border-[#111D25]"
       >
         <div className="logo_container">
           <Image src="/logo.png" alt="Logo_Commmunity" width={30} height={30} />
@@ -48,7 +48,7 @@ export default function Header() {
           <nav>
             <ul className="flex justify-center items-center gap-16">
               <LinkItem name="Início" url="#inicio" />
-              <LinkItem name="Benefício" url="#beneficio" />
+              <LinkItem name="Benefícios" url="#beneficio" />
               <LinkItem name="Guia" url="#guia" />
               <LinkItem name="Contacto" url="#contacto" />
             </ul>
