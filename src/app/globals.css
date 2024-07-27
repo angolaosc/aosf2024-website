@@ -28,6 +28,11 @@ h1 {
   transition: all .16s ease-in-out;
   animation: scroll 1s .14s ease-in-out alternate infinite;
 }
+.guide_container{
+  background-image: url("/back.png");
+  background-size: cover;
+  background-position: center center;
+}
 
 @keyframes scroll {
   from {

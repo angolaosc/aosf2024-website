@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 interface Card {
   icon_path: string;
@@ -44,7 +44,7 @@ export default function IntroPage() {
         <div>
           <a
             href="#"
-            className="flex m-auto text-white border border-[#17222F] font-medium items-center py-1 pe-1 ps-3 justify-between w-64 retrato-tablet:w-80 rounded-full bg-[#0C1318]"
+            className="flex m-auto text-white border border-[#17222F] transition-all hover:bg-[#10171d] font-medium items-center py-1 pe-1 ps-3 justify-between w-64 retrato-tablet:w-80 rounded-full bg-[#0C1318]"
           >
             <p>Baixe o Prospectus</p>
             <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#f84438] text-white">
@@ -99,7 +99,9 @@ export default function IntroPage() {
 
       {/* BENEFICIOS SECTION */}
       <section className="w-full pt-14" id="beneficios">
-        <h2 className="text-[#383f44] text-center text-3xl">Benefícios</h2>
+        <header>
+        <h2 className="text-[#747e85] text-center retrato-tablet:text-3xl text-2xl">Benefícios</h2>
+        </header>
         <div className="max-w-6xl mt-10 w-full m-auto grid grid-cols-1 retrato-tablet:grid-cols-2 paisagem-tablet:grid-cols-3 gap-3">
           <CardIntro
             icon_path="/icons/marca.svg"

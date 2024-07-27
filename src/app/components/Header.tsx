@@ -24,7 +24,7 @@ export default function Header() {
   const scrollNavbar = () => {
     if (!navbarRef.current) return;
 
-    if (window.scrollY >= 1) {
+    if (window.scrollY <= 1) {
       navbarRef.current.classList.remove("max-w-full");
       navbarRef.current.classList.add("max-w-7xl");
     } else {
