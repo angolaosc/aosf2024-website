@@ -39,7 +39,7 @@ const CardIntro: React.FC<Card> = ({
 
 export default function IntroPage() {
   return (
-    <section className="retrato-tablet:mt-44 mt-36 w-full p-5">
+    <section id='inicio' className="retrato-tablet:mt-44 mt-36 w-full p-5">
       <div className="max-w-6xl flex justify-center items-center w-full m-auto">
         <div>
           <a

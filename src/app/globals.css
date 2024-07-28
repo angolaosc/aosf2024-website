@@ -10,6 +10,9 @@
   --inter-font: 'Inter', sans-serif;
   --background-page: #030b10;
 }
+html{
+  scroll-behavior: smooth;
+}
 * {
   font-family: var(--inter-font);
 }

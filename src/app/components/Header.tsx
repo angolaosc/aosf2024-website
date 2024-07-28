@@ -1,8 +1,8 @@
-"use client";
-
-import React, { useRef, useEffect, useState } from "react";
-import Image from "next/image";
+'use client';
+import React, { useRef, useEffect, useState } from 'react';
+import Image from 'next/image';
 import classNames from 'classnames';
+import ScrollLink from './ScrollLink';
 
 interface Link {
   name: string;
@@ -31,12 +31,14 @@ export default function Header() {
         setIsScrolled(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {});
 
   return (
     <header>
@@ -56,10 +58,10 @@ export default function Header() {
         <div className="navbar_container paisagem-tablet:inline-flex hidden">
           <nav>
             <ul className="flex justify-center items-center gap-16">
-              <LinkItem name="Início" url="#inicio" />
-              <LinkItem name="Benefícios" url="#beneficio" />
-              <LinkItem name="Guia" url="#guia" />
-              <LinkItem name="Contacto" url="#contacto" />
+              <ScrollLink href="#inicio">Inicio</ScrollLink>{' '}
+              <ScrollLink href="#beneficios">Benefícios</ScrollLink>
+              <ScrollLink href="#guia">Guia</ScrollLink>
+              <ScrollLink href="#contacto">Contacto</ScrollLink>
             </ul>
           </nav>
         </div>

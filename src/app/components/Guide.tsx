@@ -1,6 +1,6 @@
 export default function Guide() {
   return (
-    <section className="mt-36 w-full  mb-40">
+    <section id="guia" className="mt-36 w-full  mb-40">
       <header className="text-center">
         <h2 className="text-[#c6d0d6]  retrato-tablet:text-3xl text-2xl font-medium">
           Patrocine agora mesmo!

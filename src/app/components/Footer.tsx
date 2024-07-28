@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { Facebook, Linkedin, Send, Youtube } from 'lucide';
 
 interface Link {
   name: string;
@@ -54,7 +53,7 @@ const BallIcon: React.FC<IconInterface> = ({ pathIcon }) => {
   return (
     <a
       href="#"
-      className="flex items-center border border-[#636262] justify-center rounded-full text-white w-10 h-10 bg-[#0B1821]"
+      className="flex items-center border border-[#2c2b2b] justify-center rounded-full text-white w-10 transition-all hover:bg-[#142631] h-10 bg-[#0B1821]"
     >
       <Image src={pathIcon} alt="social-media-icon" width={20} height={20} />
     </a>
