@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
+import classNames from 'classnames';
 
 interface Link {
   name: string;
@@ -20,26 +21,34 @@ const LinkItem: React.FC<Link> = ({ name, url }) => {
 
 export default function Header() {
   const navbarRef = useRef<HTMLDivElement>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const scrollNavbar = () => {
-    if (!navbarRef.current) return;
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
 
-    if (window.scrollY <= 1) {
-      navbarRef.current.classList.remove("max-w-full");
-      navbarRef.current.classList.add("max-w-7xl");
-    } else {
-      navbarRef.current.classList.remove("max-w-7xl");
-      navbarRef.current.classList.add("max-w-full");
-    }
-  };
-
-  document.addEventListener("scroll", scrollNavbar);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header>
       <div
         ref={navbarRef}
-        className="header z-20 bg-[#030B10] transition-all fixed top-0 left-0 right-0 max-w-7xl py-4 m-auto items-center flex px-4 justify-between w-full border-b border-[#111D25]"
+        className={classNames(
+          'header z-20 bg-[#030B10] transition-all fixed top-0 left-0 right-0 py-4 m-auto items-center flex px-4 justify-between w-full border-b border-[#111D25]',
+          {
+            'max-w-7xl': !isScrolled,
+            'max-w-full': isScrolled,
+          }
+        )}
       >
         <div className="logo_container">
           <Image src="/logo.png" alt="Logo_Commmunity" width={30} height={30} />
@@ -61,9 +70,9 @@ export default function Header() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-globe size-4"
             >
               <circle cx="12" cy="12" r="10" />
@@ -76,9 +85,9 @@ export default function Header() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-chevron-down size-5"
             >
               <path d="m6 9 6 6 6-6" />
@@ -90,9 +99,9 @@ export default function Header() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-ellipsis-vertical size-6"
             >
               <circle cx="12" cy="12" r="1" />

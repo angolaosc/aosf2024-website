@@ -2,14 +2,14 @@ export default function Guide() {
   return (
     <section className="mt-36 w-full  mb-40">
       <header className="text-center">
-        <h2 className="text-[#747e85]  retrato-tablet:text-3xl text-2xl font-medium">
+        <h2 className="text-[#c6d0d6]  retrato-tablet:text-3xl text-2xl font-medium">
           Patrocine agora mesmo!
         </h2>
         <p className="text-white pt-4">
           Veja abaixo como podes patrocinar e ajudar-nos neste grande propósito!
         </p>
       </header>
-      <div className="guide_container mt-12 h-[28rem] w-full">
+      <div className="guide_container mt-12 p-5 w-full">
         <div className="max-w-2xl pt-10 w-full m-auto grid grid-cols-1 retrato-tablet:grid-cols-2 gap-2">
           <div className="h-96 flex flex-col justify-between p-5 bg-gradient-to-br rounded-lg border border-[#17222F] from-[#0C1318] to-transparent">
             <header>

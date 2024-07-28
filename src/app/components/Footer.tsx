@@ -65,7 +65,7 @@ export default function Footer() {
   return (
     <footer className="p-6">
       <div className="full_container flex flex-col  w-full">
-        <div className="grid grid-cols-2 max-w-7xl m-auto w-full gap-5">
+        <div className="grid grid-cols-1 gap-5 paisagem-tablet:grid-cols-2 max-w-7xl m-auto w-full gap-5">
           <div className="flex justify-center">
             <div>
               <Image
@@ -91,7 +91,7 @@ export default function Footer() {
                 >
                   info@aosc.social
                 </a>
-                <div className="flex items-center gap-4 pt-4">
+                <div className="flex items-center flex-wrap gap-4 pt-4">
                   <p className="text-white">+244 936 853 728 </p>
                   <p className="text-zinc-300">|</p>
                   <p className="text-white">+244 935 401 862</p>
@@ -103,7 +103,7 @@ export default function Footer() {
           {/* LINKS */}
           <div>
             <header>
-              <h5 className="text-zinc-200">Navegação</h5>
+              <h5 className="text-zinc-500">Navegação</h5>
             </header>
             <div className="flex items-center flex-wrap gap-10 pt-5">
               <LinkItem name="inicio" url="#inicio" />
@@ -114,14 +114,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#17222F] mt-10 max-w-7xl pt-5 grid grid-cols-2 w-full m-auto">
+        <div className="border-t border-[#17222F] mt-10 max-w-7xl gap-5 pt-5 grid grid-cols-1 paisagem-tablet:grid-cols-2 w-full m-auto">
           <div>
             <header>
               <h6 className="text-white">
                 Shoutout para os Profissionais Voluntários
               </h6>
             </header>
-            <div className="grid gap-2 grid-cols-2 mt-5">
+            <div className="grid gap-2 grid-cols-1 retrato-tablet:grid-cols-2 mt-5">
               <CardItem
                 nameV="Dev Dev"
                 area="Software Engineer"
@@ -140,14 +140,16 @@ export default function Footer() {
             </div>
           </div>
           <div className="social_media">
-            <div className="flex justify-end items-center gap-5 flex-wrap">
-				<BallIcon pathIcon="/icons/facebook.svg" />
-				<BallIcon pathIcon="/icons/linkedin.svg" />
-				<BallIcon pathIcon="/icons/discord.svg" />
-				<BallIcon pathIcon="/icons/send.svg" />
-				<BallIcon pathIcon="/icons/youtube.svg" />
-			</div>
-			<p className='text-end pt-5 text-[14px] text-white'>&copy;2023 Angola Open-Source Community</p>
+            <div className="flex paisagem-tablet:justify-end justify-center items-center gap-5 flex-wrap">
+              <BallIcon pathIcon="/icons/facebook.svg" />
+              <BallIcon pathIcon="/icons/linkedin.svg" />
+              <BallIcon pathIcon="/icons/discord.svg" />
+              <BallIcon pathIcon="/icons/send.svg" />
+              <BallIcon pathIcon="/icons/youtube.svg" />
+            </div>
+            <p className="paisagem-tablet:text-end text-center pt-5 text-[14px] text-white">
+              &copy;2023 Angola Open-Source Community
+            </p>
           </div>
         </div>
       </div>

@@ -72,7 +72,7 @@ export default function IntroPage() {
                 Faça parte da revolução tecnológica em Angola. Seja um
                 patrocinador e impulsione a inovação conosco
               </p>
-              <p className="pt-5 text-[#515D65]">Continue lendo</p>
+              <p className="pt-5 text-[#88959e]">Continue lendo</p>
             </div>
 
             {/* ANIMATION SIGNAL SCROLL */}
@@ -100,7 +100,7 @@ export default function IntroPage() {
       {/* BENEFICIOS SECTION */}
       <section className="w-full pt-14" id="beneficios">
         <header>
-        <h2 className="text-[#747e85] text-center retrato-tablet:text-3xl text-2xl">Benefícios</h2>
+        <h2 className="text-[#c6d0d6] text-center retrato-tablet:text-3xl text-2xl">Benefícios</h2>
         </header>
         <div className="max-w-6xl mt-10 w-full m-auto grid grid-cols-1 retrato-tablet:grid-cols-2 paisagem-tablet:grid-cols-3 gap-3">
           <CardIntro
