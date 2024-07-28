@@ -66,9 +66,7 @@ export default function Guide() {
               </div>
             </header>
             <div>
-              <h4 className="text-xl text-white">
-                Baixe o nosso aplicativo, Prospectus
-              </h4>
+              <h4 className="text-xl text-white">Envie-nos um email</h4>
               <small className="text-zinc-200 pt-5">
                 Envie-nos um email para{' '}
                 <span className="text-[#f4372c]">apaconference@gmail.com</span>{' '}

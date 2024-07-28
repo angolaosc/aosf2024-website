@@ -9,12 +9,12 @@
 }
 
 body {
-  font-family: var(--poppins-font);
+  font-family: var(--inter-font);
   background-color: var(--background-page);
 }
 
-.header{
-  font-family: var(--inter-font);
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--poppins-font);
 }
 
 h1 {
