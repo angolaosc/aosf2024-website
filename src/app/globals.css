@@ -10,7 +10,7 @@
   --inter-font: 'Inter', sans-serif;
   --background-page: #030b10;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -47,11 +47,43 @@ h1 {
   background-position: center center;
 }
 
+.off_nav {
+  transition: all 0.18s ease-in-out;
+  transform: translateX(100%);
+}
+
+.visible {
+  animation: showOff 0.32s ease-in-out forwards;
+}
+
+.hide {
+  animation: HideOff 0.32s ease-in-out forwards;
+}
+
+
 @keyframes scroll {
   from {
     top: 0.75rem;
   }
   to {
     top: 2.5rem;
+  }
+}
+
+@keyframes showOff {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes HideOff {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }

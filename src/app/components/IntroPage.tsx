@@ -1,5 +1,7 @@
+'use client';
+import React, { createContext } from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
 
 interface Card {
   icon_path: string;
@@ -39,8 +41,14 @@ const CardIntro: React.FC<Card> = ({
 
 export default function IntroPage() {
   return (
-    <section id='inicio' className="retrato-tablet:mt-44 mt-36 w-full p-5">
-      <div className="max-w-6xl flex justify-center items-center w-full m-auto">
+    <section id="inicio" className="retrato-tablet:mt-44 mt-36 w-full p-5">
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        exit={{ opacity: 0, y: -100 }}
+        className="max-w-6xl flex justify-center items-center w-full m-auto"
+      >
         <div>
           <a
             href="#"
@@ -95,12 +103,21 @@ export default function IntroPage() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* BENEFICIOS SECTION */}
-      <section className="w-full pt-14" id="beneficios">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        className="w-full pt-14"
+        id="beneficios"
+      >
         <header>
-        <h2 className="text-[#c6d0d6] text-center retrato-tablet:text-3xl text-2xl">Benefícios</h2>
+          <h2 className="text-[#c6d0d6] text-center retrato-tablet:text-3xl text-2xl">
+            Benefícios
+          </h2>
         </header>
         <div className="max-w-6xl mt-10 w-full m-auto grid grid-cols-1 retrato-tablet:grid-cols-2 paisagem-tablet:grid-cols-3 gap-3">
           <CardIntro
@@ -122,7 +139,7 @@ export default function IntroPage() {
             text="O apoio a eventos locais e à comunidade de programação demonstra o comprometimento da empresa com o crescimento e desenvolvimento do setor tecnológico. Isso pode aumentar a reputação da marca como uma empresa que valoriza e investe no avanço da tecnologia e na formação de profissionais qualificados"
           />
         </div>
-      </section>
+      </motion.section>
     </section>
   );
 }

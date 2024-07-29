@@ -1,20 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 interface Scroll {
   href: string;
-  children: string;
+  children: any;
 }
 
 const ScrollLink: React.FC<Scroll> = ({ href, children }) => {
-  const handleClick = (e: any) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
 
     const targetId = href.substring(1);
     const targetElement = document.getElementById(targetId);
-    const navbar = document.querySelector('.header');
+    const navbar = document.querySelector('.header') as HTMLElement;
 
-    if (targetElement) {
+    if (targetElement && navbar) {
       const elementOffset = targetElement.offsetTop - navbar.offsetHeight - 50;
       window.scrollTo({
         top: elementOffset,
@@ -26,7 +25,7 @@ const ScrollLink: React.FC<Scroll> = ({ href, children }) => {
   return (
     <a
       href={href}
-      className="text-white transition-all hover:opacity-70"
+      className="text-white transition-all hover:opacity-70 nav_link"
       onClick={handleClick}
     >
       {children}
