@@ -14,6 +14,7 @@ interface Voluntario {
 
 interface IconInterface {
   pathIcon: string;
+  link: string;
 }
 
 const LinkItem: React.FC<Link> = ({ name, url }) => {
@@ -49,10 +50,10 @@ const CardItem: React.FC<Voluntario> = ({ nameV, area, path }) => {
   );
 };
 
-const BallIcon: React.FC<IconInterface> = ({ pathIcon }) => {
+const BallIcon: React.FC<IconInterface> = ({ pathIcon, link }) => {
   return (
     <a
-      href="#"
+      href={link}
       className="flex items-center border border-[#2c2b2b] justify-center rounded-full text-white w-10 transition-all hover:bg-[#142631] h-10 bg-[#0B1821]"
     >
       <Image src={pathIcon} alt="social-media-icon" width={20} height={20} />
@@ -136,18 +137,22 @@ export default function Footer() {
                 area="Software Engineer"
                 path="/alves.png"
               />
+              <CardItem
+                nameV="Jessé Inglês"
+                area="Software Engineer"
+                path="/jesse.jpg"
+              />
             </div>
           </div>
           <div className="social_media">
             <div className="flex paisagem-tablet:justify-end justify-center items-center gap-5 flex-wrap">
-              <BallIcon pathIcon="/icons/facebook.svg" />
-              <BallIcon pathIcon="/icons/linkedin.svg" />
-              <BallIcon pathIcon="/icons/discord.svg" />
-              <BallIcon pathIcon="/icons/send.svg" />
-              <BallIcon pathIcon="/icons/youtube.svg" />
+              <BallIcon pathIcon="/icons/facebook.svg" link='https://www.facebook.com/aoscangola'/>
+              <BallIcon pathIcon="/icons/linkedin.svg" link='https://www.linkedin.com/company/angola-open-source-community/'/>
+              <BallIcon pathIcon="/icons/discord.svg" link='https://discord.com/invite/tuUDNdRzvz'/>
+              <BallIcon pathIcon="/icons/youtube.svg" link='https://www.youtube.com/@angolaosc'/>
             </div>
             <p className="paisagem-tablet:text-end text-center pt-5 text-[14px] text-white">
-              &copy;2023 Angola Open-Source Community
+              &copy;2024 Angola Open-Source Community
             </p>
           </div>
         </div>

@@ -1,0 +1,152 @@
+.eventspotlight_container {
+  margin-top: 120px;
+  padding: 0 10%; /* Reduz o padding lateral para centralizar melhor */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Alinha os itens no centro horizontalmente */
+  gap: 20px; /* Ajuste o valor do gap conforme necessário */
+}
+
+.Spotlights {
+  margin-left: 80px;
+}
+
+.eventspotlight_container_body_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.eventspotlight_container_body_1_description {
+  width: 630px;
+  font-size: 20px;
+  color: white;
+  line-height: 27px;
+}
+
+.eventspotlight_container_body_1_hero_1 {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px var(--blue600) solid;
+  
+
+}
+
+.eventspotlight_container_body_1_hero_1_button_1 {
+  background: #0C141A;
+  padding: 20px 40px;
+  border-radius: 67px;
+  color: var(--blue200);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.3s;
+  border: 1px solid #0E202C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 67px;
+}
+
+.eventspotlight_container_body_1_hero_1_button_1:hover {
+  background-color: var(--blue700); /* Muda a cor de fundo ao passar o mouse */
+  border-color: var(--blue500); /* Muda a cor da borda ao passar o mouse */
+  color: var(--blue500); /* Muda a cor do texto ao passar o mouse */
+  transform: scale(1.05); /* Adiciona um leve aumento ao botão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+}
+
+.eventspotlight_container_body_1_hero_1_button_2 {
+  background-color: #d77d712c;
+  border: 1px solid #94797262;
+  padding: 20px 40px;
+  border-radius: 67px;
+  color: var(--blue200);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.eventspotlight_container_body_1_hero_1_button_2:hover {
+  border-color: var(--red500); /* Muda a cor da borda ao passar o mouse */
+  color: var(--red500); /* Muda a cor do texto ao passar o mouse */
+  transform: scale(1.05); /* Adiciona um leve aumento ao botão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+}
+
+.eventspotlight_container_body_1_hero_2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eventspotlight_container_body_1_hero_2_card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  font-size: 40px;
+  justify-content: start;
+  gap: 10px;
+  width: 300px;
+}
+
+.eventspotlight_container_body_1_hero_2_seperator {
+  background-color: var(--blue600);
+  width: 2px;
+  height: 50px;
+}
+
+.eventspotlight_container_body_1_hero_2_card div h2 {
+  font-size: 20px;
+}
+
+.eventspotlight_container_body_1_hero_2_card div p {
+  font-size: 16px;
+  color: var(--blue600);
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .eventspotlight_container {
+    flex-direction: column; /* Altera a direção do flex para coluna */
+    padding: 0 5%; /* Ajusta o padding lateral */
+  }
+
+  .Spotlights {
+    margin-left: 0;
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    align-self: center; /* Centraliza horizontalmente */
+  }
+
+  .eventspotlight_container_body_1_description {
+    width: 100%;
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+  }
+
+  .eventspotlight_container_body_1_hero_1,
+  .eventspotlight_container_body_1_hero_2 {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center;
+  }
+
+  .eventspotlight_container_body_1_hero_1_button_1,
+  .eventspotlight_container_body_1_hero_1_button_2 {
+    width: 80%; /* Ajusta a largura dos botões */
+    margin: 10px 0; /* Adiciona espaçamento vertical */
+  }
+
+  .eventspotlight_container_body_1_hero_2_card {
+    width: 90%; /* Ajusta a largura dos cartões */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+  }
+}

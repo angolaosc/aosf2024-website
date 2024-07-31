@@ -51,7 +51,7 @@ export default function IntroPage() {
       >
         <div>
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1z5b5c7jdxubWIIwT5yRj1_Yb8jAmCm4L/view?usp=sharing"
             className="flex m-auto text-white border border-[#17222F] transition-all hover:bg-[#10171d] font-medium items-center py-1 pe-1 ps-3 justify-between w-64 retrato-tablet:w-80 rounded-full bg-[#0C1318]"
           >
             <p>Baixe o Prospectus</p>

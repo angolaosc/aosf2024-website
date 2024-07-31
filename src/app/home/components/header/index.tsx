@@ -2,10 +2,32 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
-import ScrollLink from './ScrollLink';
+import ScrollLink from '../../../patrocine/components/ScrollLink';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import styles from './styles.module.css';
+import { i18n } from '@/translate/i18n';
 
 export default function Header() {
+  const {boxButton, buttonSupport} = styles;
+  const I18N_KEY = "i18nextLng";
+
+  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
+  const [linkClicked, setLinkClicked] = useState(100);
+  const [showLanguage, setShowLanguage] = useState(false);
+  const [language, setLanguage] = useState<any>("PT");
+
+  const handleChangeLanguage = (value: any) => {
+    localStorage.setItem("i18nextLng", value);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
+    }
+  }, []);
+
   const navbarRef = useRef<HTMLDivElement>(null);
   const buttonActiveOff = useRef<HTMLButtonElement>(null);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,9 +82,9 @@ export default function Header() {
           }
         )}
       >
-        <div className="logo_container">
+        <Link className="logo_container" href="/">
           <Image src="/logo.png" alt="Logo_Commmunity" width={30} height={30} />
-        </div>
+        </Link>
         <div className="navbar_container paisagem-tablet:inline-flex hidden">
           <nav>
             <ul className="flex justify-center items-center gap-16">
@@ -88,35 +110,11 @@ export default function Header() {
           exit={{opacity: 0, scale: 0}}
           className="flex items-center gap-6"
         >
-          <button className="hidden retrato-tablet:flex border-[#17222F] border rounded-full font-medium text-[14px] items-center px-4 py-1.5 bg-[#0C1318] transition-all hover:bg-[#10171d] text-white gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-globe size-4"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-              <path d="M2 12h20" />
-            </svg>
-            PT
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-chevron-down size-5"
-            >
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </button>
+          <div className={boxButton + " paisagem-tablet:hidden"}>
+            <Link href={"/patrocine"} className={buttonSupport}>
+              {"Patrocine"}
+            </Link>
+          </div>
           <button
             ref={buttonActiveOff}
             className="text-white paisagem-tablet:hidden inline-flex transition-all hover:opacity-70"

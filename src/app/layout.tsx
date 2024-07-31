@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'APA - Patrocinador',
-  description: 'Um website ',
+  title: 'Angola Open-Source Fest',
+  description: 'This is the offical Angola Open-Source Fest 2024 website',
 };
 
 export default function RootLayout({

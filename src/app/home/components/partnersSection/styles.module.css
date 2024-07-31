@@ -1,0 +1,87 @@
+/* Estilos gerais */
+.container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; /* Espaçamento entre as categorias */
+  width: 100%;
+  max-width: 1200px; /* Limite de largura máxima */
+  margin: 0 auto;
+  padding: 20px; /* Espaçamento interno */
+}
+
+.tpatrocinio {
+  color: #e4e4e4;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.barra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.barra h3 {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.barra hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #e4e4e4;
+  margin: 0 130px;
+}
+
+/* Estilos específicos para categorias de patrocinadores */
+.platinum, .gold, .silver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  /* Ajuste conforme necessário */
+  
+  border-radius: 10px; /* Cantos arredondados */
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  height: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sponsors {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre as categorias */
+  }
+
+  .logo {
+    width: 80px; /* Ajuste para telas menores */
+    height: 80px; /* Ajuste para telas menores */
+  }
+
+  .tpatrocinio {
+    font-size: 24px; /* Ajuste para telas menores */
+  }
+}
+

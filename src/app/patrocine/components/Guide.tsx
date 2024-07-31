@@ -47,7 +47,7 @@ export default function Guide() {
               </small>
               <div className="mt-6 flex justify-end">
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/1z5b5c7jdxubWIIwT5yRj1_Yb8jAmCm4L/view?usp=sharing"
                   className="block transition-all hover:bg-[#cf322a] text-[15px] text-white px-5 py-2.5 rounded-lg bg-[#F4372C]"
                 >
                   Download
@@ -77,7 +77,7 @@ export default function Guide() {
               <h4 className="text-xl text-white">Envie-nos um email</h4>
               <small className="text-zinc-200 pt-5">
                 Envie-nos um email para{' '}
-                <span className="text-[#f4372c]">apaconference@gmail.com</span>{' '}
+                <span className="text-[#f4372c]">info@aosc.social</span>{' '}
                 com os dados da empresa como nome, email, telefone e foto!
               </small>
               <div className="mt-6 flex justify-end">

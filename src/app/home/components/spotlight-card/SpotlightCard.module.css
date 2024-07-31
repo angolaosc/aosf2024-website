@@ -1,0 +1,49 @@
+/* Estilos gerais */
+.container {
+  overflow: hidden; /* Esconde o excesso de conteúdo fora do contêiner */
+  position: relative;
+}
+
+.slideWrapper {
+  display: flex;
+  transform-origin: top left;
+  margin-top: 50px; /* Ajuste conforme necessário */
+}
+
+.spotlightCard {
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, rgba(71, 86, 94, 0.168627) 0%, rgba(0, 0, 0, 0) 100%);
+  margin: 10px; /* Espaçamento entre os cartões */
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.description {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Classes para elevações diferentes */
+
+
+/* Media Queries para versões mobile */
+@media (max-width: 768px) {
+  .slideWrapper {
+    flex-wrap: wrap; /* Aplica flex-wrap apenas em dispositivos móveis */
+  }
+}
+
+@media (min-width: 768px) {
+  .elevated1 {
+    margin-top: -50px; /* Ajuste a altura conforme necessário */
+  }
+  
+  .elevated2 {
+    margin-top: -25px; /* Ajuste a altura conforme necessário */
+  }
+}
+
