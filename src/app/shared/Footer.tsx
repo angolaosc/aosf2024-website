@@ -116,33 +116,7 @@ export default function Footer() {
 
         <div className="border-t border-[#17222F] mt-10 max-w-7xl gap-5 pt-5 grid grid-cols-1 paisagem-tablet:grid-cols-2 w-full m-auto">
           <div>
-            <header>
-              <h6 className="text-white">
-                Shoutout para os Profissionais Voluntários
-              </h6>
-            </header>
-            <div className="grid gap-2 grid-cols-1 retrato-tablet:grid-cols-2 mt-5">
-              <CardItem
-                nameV="Dev Dev"
-                area="Software Engineer"
-                path="/dev.png"
-              />
-              <CardItem
-                nameV="Mário Monteiro"
-                area="UI/UX Designer"
-                path="/walt.png"
-              />
-              <CardItem
-                nameV="Alfrânio Alves"
-                area="Software Engineer"
-                path="/alves.png"
-              />
-              <CardItem
-                nameV="Jessé Inglês"
-                area="Software Engineer"
-                path="/jesse.jpg"
-              />
-            </div>
+           
           </div>
           <div className="social_media">
             <div className="flex paisagem-tablet:justify-end justify-center items-center gap-5 flex-wrap">
