@@ -89,17 +89,21 @@ export default function Header() {
           <nav>
             <ul className="flex justify-center items-center gap-16">
               <li>
-                <ScrollLink href="#inicio">Inicio</ScrollLink>
+                <ScrollLink href="#inicio">Evento</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#beneficios">Benefícios</ScrollLink>
+                <ScrollLink href="#eventspotlights">Informações</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#guia">Guia</ScrollLink>
+                <ScrollLink href="#guia">Agenda</ScrollLink>
+              </li>
+              <li>
+                <ScrollLink href="#partnersSection">Patrocinadores</ScrollLink>
               </li>
               <li>
                 <ScrollLink href="#contacto">Contacto</ScrollLink>
               </li>
+              
             </ul>
           </nav>
         </div>

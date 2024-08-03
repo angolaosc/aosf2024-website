@@ -1,13 +1,14 @@
 .container {
-
-  width: 1471px;
-  height: 624px;
-  top: 1255px;
-  left: 118px;
-  gap: 0px;
-  border-radius: 39px 0px 0px 0px;
-  opacity: 0px;
-  padding: 0px;
-  margin: 0 auto;
-
+  background: linear-gradient(180deg, #0D161B 0%, #030B10 100%);
+  border-radius: 15px;
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  width: auto;
+  padding: 30px;
+  
 }

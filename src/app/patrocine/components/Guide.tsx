@@ -40,7 +40,7 @@ export default function Guide() {
             </header>
             <div>
               <h4 className="text-xl text-white">
-                Baixe o nosso aplicativo, Prospectus
+                Baixe o nosso preliminar, Prospectus
               </h4>
               <small className="text-zinc-200 pt-5">
                 Baixe o nosso prespectus e leia os termos e propostas!

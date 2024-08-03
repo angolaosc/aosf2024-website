@@ -1,10 +1,28 @@
 .topicSections {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 50px;
   text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.topicSections div {
+  background: linear-gradient(90deg, #f84438 0%, #0c141a 70%);
+  margin-bottom: 150px;
+  padding: 10px;
+}
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.topicOne {
+  
 }
 
 .topicSections h1 {

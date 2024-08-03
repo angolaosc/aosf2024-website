@@ -63,7 +63,7 @@ const BallIcon: React.FC<IconInterface> = ({ pathIcon, link }) => {
 
 export default function Footer() {
   return (
-    <footer className="p-6">
+    <footer className="p-6" id='contacto'>
       <div className="full_container flex flex-col  w-full">
         <div className="grid grid-cols-1 gap-5 paisagem-tablet:grid-cols-2 max-w-7xl m-auto w-full gap-5">
           <div className="flex justify-center">
@@ -76,11 +76,7 @@ export default function Footer() {
               />
               <div className="pt-5 w-4/5">
                 <p className="text-[12px] text-zinc-200">
-                  A Associação dos Programadores Angolanos (APA) é uma
-                  comunidade unida em torno do avanço e promoção da programação
-                  em Angola. Buscamos criar oportunidades, promover o
-                  aprendizado e impulsionar o crescimento da indústria
-                  tecnológica no país
+                  O Angola Open-Source Fest é um evento inovador que reúne apaixonados por tecnologia, programadores e especialistas em um ambiente de aprendizado e colaboração. Prepare-se para uma experiência única, repleta de debates inspiradores, workshops especializados e hackathons desafiadores que visam promover o progresso e a inovação na comunidade de programação de Angola.
                 </p>
               </div>
               {/* INFO */}

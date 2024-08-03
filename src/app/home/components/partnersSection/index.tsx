@@ -4,7 +4,7 @@ const PartnersSection = () => {
   const { container, sponsors, tpatrocinio, barra, platinum, gold, silver, logo } = styles;
   
   return (
-    <div className={container}>
+    <div className={container} id="partnersSection">
       <div className={sponsors}>
         <div className={platinum}>
           <h3 className={tpatrocinio}>Platinum</h3>

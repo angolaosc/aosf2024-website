@@ -74,7 +74,7 @@ export default function OffCanvas() {
           <div>
             <h6 className="text-white">Menu</h6>
           </div>
-        </header>
+        </header>     
         <div className="pt-10 grid grid-cols-1 gap-10">
           <ScrollLink href="#inicio">
             <div className="flex justify-between items-center nav_link">

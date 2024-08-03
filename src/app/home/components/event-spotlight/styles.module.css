@@ -56,9 +56,8 @@
 }
 
 .eventspotlight_container_body_1_hero_1_button_1:hover {
-  background-color: var(--blue700); /* Muda a cor de fundo ao passar o mouse */
+  
   border-color: var(--blue500); /* Muda a cor da borda ao passar o mouse */
-  color: var(--blue500); /* Muda a cor do texto ao passar o mouse */
   transform: scale(1.05); /* Adiciona um leve aumento ao botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
 }
@@ -80,7 +79,6 @@
 
 .eventspotlight_container_body_1_hero_1_button_2:hover {
   border-color: var(--red500); /* Muda a cor da borda ao passar o mouse */
-  color: var(--red500); /* Muda a cor do texto ao passar o mouse */
   transform: scale(1.05); /* Adiciona um leve aumento ao botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
 }

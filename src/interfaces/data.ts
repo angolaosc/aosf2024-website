@@ -74,3 +74,15 @@ export interface SpotlightCardProps {
   description: string;
   className: string;
 }
+
+export interface EventDetailsCard {
+  icon: StaticImageData;
+  title: string;
+  description: string;
+}
+
+export interface EventTopicCard {
+  title: String;
+  date: string;
+  done:Boolean;
+}

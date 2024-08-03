@@ -28,7 +28,7 @@ const EventSpotlight = () => {
   } = styles;
 
   return (
-    <div className={eventspotlight_container}>
+    <div className={eventspotlight_container} id="eventspotlights">
       <div className={eventspotlight_container_body_1}>
         <Image src={aosfest} width={470} height={148} alt="aosfest" />
         <p className={eventspotlight_container_body_1_description}>
