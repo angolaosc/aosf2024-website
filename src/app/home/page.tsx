@@ -7,6 +7,7 @@ import CompaniesSection from "./components/companiesSection/companiesSection";
 import EventSpotlight from "./components/event-spotlight";
 import EventDetails from "./components/eventdetails/eventDetails";
 import EventTopics from "./components/eventTopics/EventTopics";
+import OtherEvents from "./components/other-events";
 import Header from "./components/header";
 import PartnersSection from "./components/partnersSection";
 
@@ -19,6 +20,7 @@ export default function HomePage() {
         <CompaniesSection />
         <EventDetails />
         <EventTopics />
+        <OtherEvents />
         <PartnersSection />
       </main>
       <Footer />
