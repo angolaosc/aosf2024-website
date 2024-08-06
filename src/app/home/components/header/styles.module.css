@@ -1,5 +1,5 @@
 .header {
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   z-index: 1000;
   position: fixed;
   width: 100vw;
@@ -18,9 +18,11 @@
   backdrop-filter: blur(20px);
   border-bottom: 1px #00aef91d solid;
 }
-.boxButton{
+
+.boxButton {
   color: white;
 }
+
 /* Mobile Menu */
 .header .container_area .mobile_menu {
   position: absolute;
@@ -43,7 +45,7 @@
 }
 
 .header .container_area .mobile_menu a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   font-size: 14px;
   text-decoration: none;
@@ -86,7 +88,7 @@
 }
 
 .header .container_area .list_link a::after {
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   position: absolute;
@@ -113,7 +115,7 @@
   display: flex;
   gap: 12px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 14px;
   align-items: center;
@@ -127,7 +129,7 @@
   background-color: transparent;
   border: none;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: background 0.5s, color 0.3s, transform 0.3s;
   display: flex;

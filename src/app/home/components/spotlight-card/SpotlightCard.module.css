@@ -29,9 +29,6 @@
   color: white;
 }
 
-/* Classes para elevações diferentes */
-
-
 /* Media Queries para versões mobile */
 @media (max-width: 768px) {
   .slideWrapper {
@@ -43,9 +40,8 @@
   .elevated1 {
     margin-top: -50px; /* Ajuste a altura conforme necessário */
   }
-  
+
   .elevated2 {
     margin-top: -25px; /* Ajuste a altura conforme necessário */
   }
 }
-

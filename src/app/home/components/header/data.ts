@@ -1,5 +1,5 @@
-import { type PropsType } from './interface'
-import { i18n } from '@/translate/i18n'
+import { i18n } from '@/translate/i18n';
+import { type PropsType } from './interface';
 
 export const MENU: PropsType[] = [
   {
@@ -27,4 +27,4 @@ export const MENU: PropsType[] = [
     content: i18n.t('nav.link_5'),
     target: '#contact',
   },
-]
+];

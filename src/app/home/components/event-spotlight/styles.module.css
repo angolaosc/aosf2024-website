@@ -34,12 +34,10 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px var(--blue600) solid;
-  
-
 }
 
 .eventspotlight_container_body_1_hero_1_button_1 {
-  background: #0C141A;
+  background: #0c141a;
   padding: 20px 40px;
   border-radius: 67px;
   color: var(--blue200);
@@ -49,14 +47,13 @@
   justify-content: center;
   gap: 15px;
   transition: all 0.3s;
-  border: 1px solid #0E202C;
+  border: 1px solid #0e202c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 67px;
   color: white;
 }
 
 .eventspotlight_container_body_1_hero_1_button_1:hover {
-  
   border-color: var(--blue500); /* Muda a cor da borda ao passar o mouse */
   transform: scale(1.05); /* Adiciona um leve aumento ao botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */

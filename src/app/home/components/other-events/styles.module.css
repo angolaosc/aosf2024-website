@@ -1,81 +1,80 @@
 .topicSections {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    
-  }
-  
-  .topicSections div {
-    background: linear-gradient(90deg, #f84438 0%, #0c141a 70%);
-    margin-bottom: 150px;
-    padding: 10px;
-  }
-  .titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-  }
-  .topicOne {
-    
-  }
-  
-  .topicSections h1 {
-    font-family: Poppins, sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 60px;
-    color: #FFFFFF;
-  }
-  
-  #titulo {
-    color: #FFFFFF;
-    font-size: 21px;
-  }
-  
-  #data {
-    color: #95B0BD;
-    font-size: 19px;
-  }
-  
-  .cardsSection {
-    margin-top: 20px;
-  }
-  
-  .cardsSection div {
-    background-color: #1a1a1a; /* Ajuste conforme necessário */
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .buttonSupport {
-    background: linear-gradient(90deg, #f84438 0%, #0c141a 70%);
-    border-radius: 61px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    transition: background 0.5s, color 0.3s, transform 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-  }
-  
-  .buttonSupport:hover {
-    background: linear-gradient(-90deg, #f84438 0%, #0c141a 70%);
-  }
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.topicSections div {
+  background: linear-gradient(90deg, #f84438 0%, #0c141a 70%);
+  margin-bottom: 150px;
+  padding: 10px;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.topicOne {
+}
+
+.topicSections h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+#titulo {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+#data {
+  color: #95b0bd;
+  font-size: 19px;
+}
+
+.cardsSection {
+  margin-top: 20px;
+}
+
+.cardsSection div {
+  background-color: #1a1a1a; /* Ajuste conforme necessário */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.buttonSupport {
+  background: linear-gradient(90deg, #f84438 0%, #0c141a 70%);
+  border-radius: 61px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.5s, color 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.buttonSupport:hover {
+  background: linear-gradient(-90deg, #f84438 0%, #0c141a 70%);
+}

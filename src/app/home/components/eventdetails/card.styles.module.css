@@ -1,9 +1,8 @@
-
 .slideWrapper {
   color: white;
   display: flex;
   flex-direction: row;
-  
+
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -15,10 +14,9 @@
   }
 }
 
-.spotlightCard div{
+.spotlightCard div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
   color: orangered;
-  
 }

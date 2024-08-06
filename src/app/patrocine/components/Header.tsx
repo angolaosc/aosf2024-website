@@ -1,10 +1,10 @@
 'use client';
-import React, { useRef, useEffect, useState } from 'react';
-import Image from 'next/image';
 import classNames from 'classnames';
-import ScrollLink from './ScrollLink';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+import ScrollLink from './ScrollLink';
 
 export default function Header() {
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -33,9 +33,7 @@ export default function Header() {
   }, []);
 
   const showOffCanvas = () => {
-    const backgroundOffCanvas = document.querySelector(
-      '.off_back'
-    ) as HTMLElement;
+    const backgroundOffCanvas = document.querySelector('.off_back') as HTMLElement;
     const offCanvas = document.querySelector('.off_nav') as HTMLElement;
 
     if (backgroundOffCanvas && offCanvas) {
@@ -85,8 +83,8 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{duration: 0.6}}
-          exit={{opacity: 0, scale: 0}}
+          transition={{ duration: 0.6 }}
+          exit={{ opacity: 0, scale: 0 }}
           className="flex items-center gap-6"
         >
           <button className="hidden retrato-tablet:flex border-[#17222F] border rounded-full font-medium text-[14px] items-center px-4 py-1.5 bg-[#0C1318] transition-all hover:bg-[#10171d] text-white gap-2">

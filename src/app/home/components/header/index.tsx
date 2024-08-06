@@ -1,12 +1,11 @@
 'use client';
-import React, { useRef, useEffect, useState } from 'react';
-import Image from 'next/image';
 import classNames from 'classnames';
-import ScrollLink from '../../../patrocine/components/ScrollLink';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+import ScrollLink from '../../../patrocine/components/ScrollLink';
 import styles from './styles.module.css';
-import { i18n } from '@/translate/i18n';
 
 export default function Header() {
   const {boxButton, buttonSupport} = styles;
