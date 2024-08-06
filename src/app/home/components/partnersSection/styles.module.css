@@ -50,7 +50,9 @@
 }
 
 /* Estilos específicos para categorias de patrocinadores */
-.platinum, .gold, .silver {
+.platinum,
+.gold,
+.silver {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +60,7 @@
 
 .logo {
   /* Ajuste conforme necessário */
-  
+
   border-radius: 10px; /* Cantos arredondados */
   margin-top: 10px;
 
@@ -85,4 +87,3 @@
     font-size: 24px; /* Ajuste para telas menores */
   }
 }
-

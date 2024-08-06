@@ -23,11 +23,7 @@ const ScrollLink: React.FC<Scroll> = ({ href, children }) => {
   };
 
   return (
-    <a
-      href={href}
-      className="text-white transition-all hover:opacity-70 nav_link"
-      onClick={handleClick}
-    >
+    <a href={href} className="text-white transition-all hover:opacity-70 nav_link" onClick={handleClick}>
       {children}
     </a>
   );

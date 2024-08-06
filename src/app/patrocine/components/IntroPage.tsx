@@ -1,7 +1,7 @@
 'use client';
-import React, { createContext } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import React from 'react';
 
 interface Card {
   icon_path: string;
@@ -10,12 +10,7 @@ interface Card {
   fromGradient: string;
 }
 
-const CardIntro: React.FC<Card> = ({
-  icon_path,
-  title,
-  text,
-  fromGradient,
-}) => {
+const CardIntro: React.FC<Card> = ({ icon_path, title, text, fromGradient }) => {
   return (
     <div
       style={{
@@ -24,12 +19,7 @@ const CardIntro: React.FC<Card> = ({
       className="rounded-t-3xl p-5"
     >
       <header>
-        <Image
-          src={icon_path}
-          alt="icone_demonstracao"
-          width={40}
-          height={40}
-        />
+        <Image src={icon_path} alt="icone_demonstracao" width={40} height={40} />
       </header>
       <div className="pt-10">
         <h3 className="text-xl text-white">{title}</h3>
@@ -77,8 +67,7 @@ export default function IntroPage() {
             </h1>
             <div className="retrato-tablet:w-4/5 w-full m-auto">
               <p className="text-white pt-4 text-normal paisagem-tablet:text-xl">
-                Faça parte da revolução tecnológica em Angola. Seja um
-                patrocinador e impulsione a inovação conosco
+                Faça parte da revolução tecnológica em Angola. Seja um patrocinador e impulsione a inovação conosco
               </p>
               <p className="pt-5 text-[#88959e]">Continue lendo</p>
             </div>
@@ -115,9 +104,7 @@ export default function IntroPage() {
         id="beneficios"
       >
         <header>
-          <h2 className="text-[#c6d0d6] text-center retrato-tablet:text-3xl text-2xl">
-            Benefícios
-          </h2>
+          <h2 className="text-[#c6d0d6] text-center retrato-tablet:text-3xl text-2xl">Benefícios</h2>
         </header>
         <div className="max-w-6xl mt-10 w-full m-auto grid grid-cols-1 retrato-tablet:grid-cols-2 paisagem-tablet:grid-cols-3 gap-3">
           <CardIntro

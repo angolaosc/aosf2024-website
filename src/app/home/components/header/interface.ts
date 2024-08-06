@@ -1,5 +1,5 @@
 export interface PropsType {
-  id: number
-  content: string
-  target: string
+  id: number;
+  content: string;
+  target: string;
 }

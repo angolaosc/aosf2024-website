@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import ScrollLink from './ScrollLink';
 
 export default function OffCanvas() {
@@ -52,10 +52,7 @@ export default function OffCanvas() {
       <div className="fixed off_nav right-0 h-full w-full retrato-tablet:w-[30rem] p-6 bg-[#03090e]">
         <header className="flex items-center justify-between border-b border-[#111D25] pb-3">
           <div>
-            <button
-              ref={closeButton}
-              className="text-white transition-all hover:text-[#FD392D]"
-            >
+            <button ref={closeButton} className="text-white transition-all hover:text-[#FD392D]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -74,7 +71,7 @@ export default function OffCanvas() {
           <div>
             <h6 className="text-white">Menu</h6>
           </div>
-        </header>     
+        </header>
         <div className="pt-10 grid grid-cols-1 gap-10">
           <ScrollLink href="#inicio">
             <div className="flex justify-between items-center nav_link">

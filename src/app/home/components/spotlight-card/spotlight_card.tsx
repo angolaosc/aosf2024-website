@@ -1,14 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import style from "./SpotlightCard.module.css";
-import { SpotlightCardProps } from "../../../../interfaces/data";
+import React from 'react';
+import Image from 'next/image';
+import style from './SpotlightCard.module.css';
+import { SpotlightCardProps } from '../../../../interfaces/data';
 
-const SpotlightCard: React.FC<SpotlightCardProps> = ({
-  icon,
-  title,
-  description,
-  className
-}) => {
+const SpotlightCard: React.FC<SpotlightCardProps> = ({ icon, title, description, className }) => {
   return (
     <div className={`${style.spotlightCard} ${className}`}>
       <Image src={icon} width={40} height={40} alt="Spotlight Icon" />
@@ -18,9 +13,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
   );
 };
 
-const SpotlightSlide: React.FC<{ spotlights: SpotlightCardProps[] }> = ({
-  spotlights,
-}) => {
+const SpotlightSlide: React.FC<{ spotlights: SpotlightCardProps[] }> = ({ spotlights }) => {
   return (
     <div className={style.container}>
       <div className={style.slideWrapper}>

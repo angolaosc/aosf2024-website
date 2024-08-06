@@ -12,7 +12,6 @@
 }
 html {
   scroll-behavior: smooth;
-
 }
 * {
   font-family: var(--inter-font);
@@ -60,7 +59,6 @@ h1 {
 .hide {
   animation: HideOff 0.32s ease-in-out forwards;
 }
-
 
 @keyframes scroll {
   from {
