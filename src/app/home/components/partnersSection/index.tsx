@@ -75,7 +75,7 @@ const PartnersSection = () => {
       </div>
       <div className={barra}>
         <hr />
-        <h3>Patrocinadores</h3>
+        <h3 >Patrocinadores</h3>
         <hr />
       </div>
     </div>
