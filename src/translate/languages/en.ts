@@ -82,9 +82,7 @@ const locales = {
       footer: {
         focus: {
           title: 'Angolan Programmers Association',
-          description: `The Angolan Programmers Association (APA) is a community united around the advancement and
-                    the promotion of programming in Angola. We seek to create opportunities, promote learning and
-                    drive the growth of the technology industry in the country`,
+          description: `The Angola Open-Source Fest is an innovative event that brings together technology enthusiasts, programmers, and experts in a learning and collaborative environment. Get ready for a unique experience filled with inspiring debates, specialized workshops, and challenging hackathons aimed at fostering progress and innovation in the Angolan programming community.`,
         },
         title_1: 'Navigation',
         title_2: 'Contact us',

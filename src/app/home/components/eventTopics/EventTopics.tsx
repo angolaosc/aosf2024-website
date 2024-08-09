@@ -44,7 +44,7 @@ const EventTopics = () => {
         {topics.map((topic, index) => (
           <div
             key={index}
-            className="relative w-[406px] h-[485px] bg-gradient-to-b from-[#030B10] to-[#47565E] rounded-lg p-5 text-white"
+            className="relative w-[406px] h-[485px] bg-custom-gradient rounded-lg p-5 text-white"
           >
             <div
               className={`absolute top-5 left-5 w-32 h-10 rounded-full flex items-center justify-center text-lg font-medium text-white ${

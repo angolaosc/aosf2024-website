@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 interface Link {
   name: string;
@@ -53,6 +55,10 @@ const BallIcon: React.FC<IconInterface> = ({ pathIcon, link }) => {
 };
 
 export default function Footer() {
+  //const {t, i18n } = useTranslation;
+  /*const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };*/
   return (
     <footer className="p-6" id="contacto">
       <div className="full_container flex flex-col  w-full">
@@ -62,6 +68,7 @@ export default function Footer() {
               <Image src="/logo_spa.png" alt="imagem-angola-open-source" width={200} height={200} />
               <div className="pt-5 w-4/5">
                 <p className="text-[12px] text-zinc-200">
+                  {/*t('nav.translations.link_1')*/}
                   O Angola Open-Source Fest é um evento inovador que reúne apaixonados por tecnologia, programadores e
                   especialistas em um ambiente de aprendizado e colaboração. Prepare-se para uma experiência única,
                   repleta de debates inspiradores, workshops especializados e hackathons desafiadores que visam promover

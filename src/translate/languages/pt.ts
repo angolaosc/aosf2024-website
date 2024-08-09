@@ -81,9 +81,7 @@ const locales = {
             footer:{
                 focus:{
                     title:'Associação de programamdores Angolanos',
-                    description:`A Associação dos Programadores Angolanos (APA) é uma comunidade unida em torno do avanço e
-                    promoção da programação em Angola. Buscamos criar oportunidades, promover o aprendizado e
-                    impulsionar o crescimento da indústria tecnológica no país`
+                    description:`O Angola Open-Source Fest é um evento inovador que reúne apaixonados por tecnologia, programadores e especialistas em um ambiente de aprendizado e colaboração. Prepare-se para uma experiência única, repleta de debates inspiradores, workshops especializados e hackathons desafiadores que visam promover o progresso e a inovação na comunidade de programação de Angola.`
                 },
                 title_1:'Navegação',
                 title_2:'contacto'
