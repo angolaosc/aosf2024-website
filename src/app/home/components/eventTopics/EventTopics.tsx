@@ -1,32 +1,48 @@
-import styles from './styles.module.css';
+
+interface EventTopics{
+  done: boolean;
+  titulo: string;
+  tempo: string;
+  orador: string;
+  descricaoOrador: string;
+}
+
+const topics: EventTopics[] = [
+  {
+    done: true,
+    titulo: 'Introdução a inteligência artificial',
+    tempo: '09:00 - 10:30 GMT + 1',
+    orador: 'Dr. Maria Silva',
+    descricaoOrador: 'CEO - TECHGENIUS'
+  },
+  {
+    done: false,
+    titulo: 'Introdução a inteligência artificial',
+    tempo: '09:00 - 10:30 GMT + 1',
+    orador: 'Dr. Maria Silva',
+    descricaoOrador: 'CEO - TECHGENIUS'
+  },
+  {
+    done: true,
+    titulo: 'Introdução a inteligência artificial',
+    tempo: '09:00 - 10:30 GMT + 1',
+    orador: 'Dr. Maria Silva',
+    descricaoOrador: 'CEO - TECHGENIUS'
+  },
+
+];
 
 const EventTopics = () => {
-  const { topicSections, titulo, data, topicOne } = styles;
 
-  return (
-    <>
-      <h1 className={titulo}>Participe nos eventos</h1>
-      <section className={topicSections}>
-        <div className={topicOne}>
-          <div>
-            <h4 id={titulo}>Inovação e Tendências Tecnológicas</h4>
-            <h5 id={data}>Quinta-feira, 24 de Novembro - 2024</h5>
-          </div>
+ return (
+        <section className="flex justify-center h-screen "> 
+        <h1 className="text-center bg-white">Participe nos eventos</h1>
+        <div>
+          <h3>Inovação e Tendências Tecnológicaa</h3>
+          <h3>Sexta-feira, 30 de Novembro - 2024</h3> 
         </div>
-        <div className="topicOne">
-          <div>
-            <h4 id={titulo}>Inovação e Tendências Tecnológicas</h4>
-            <h5 id={data}>Quinta-feira, 24 de Novembro - 2024</h5>
-          </div>
-        </div>
-        <div className="topicOne">
-          <div>
-            <h4 id={titulo}>Inovação e Tendências Tecnológicas</h4>
-            <h5 id={data}>Quinta-feira, 24 de Novembro - 2024</h5>
-          </div>
-        </div>
+        
       </section>
-    </>
   );
 };
 

@@ -2,12 +2,17 @@
   color: white;
   display: flex;
   flex-direction: row;
-
+  
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  
 }
-
+.spotlightCard {
+  padding: 20px;
+  border-radius: 30px;
+  background: linear-gradient(5.75deg, rgba(12, 20, 25, 0.03) 13.86%, #FD392D 95.43%);
+}
 @media (max-width: 500px) {
   .slideWrapper {
     flex-wrap: wrap;
@@ -18,5 +23,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
-  color: orangered;
+  color: black;
+  font-weight: bold;
 }
