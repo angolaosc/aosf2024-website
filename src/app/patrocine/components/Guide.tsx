@@ -1,7 +1,26 @@
 'use client';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { i18n } from "@/translate/i18n";
 
 export default function Guide() {
+  const I18N_KEY = "i18nextLng";
+
+  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
+  const [linkClicked, setLinkClicked] = useState(100);
+  const [showLanguage, setShowLanguage] = useState(false);
+  const [language, setLanguage] = useState<any>("PT");
+
+  const handleChangeLanguage = (value: any) => {
+    localStorage.setItem("i18nextLng", value);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
+    }
+  }, []);
   return (
     <section id="guia" className="mt-36 w-full  mb-40">
       <motion.header
@@ -10,8 +29,8 @@ export default function Guide() {
         transition={{ duration: 0.9 }}
         className="text-center"
       >
-        <h2 className="text-[#c6d0d6]  retrato-tablet:text-3xl text-2xl font-medium">Patrocine agora mesmo!</h2>
-        <p className="text-white pt-4">Veja abaixo como podes patrocinar e ajudar-nos neste grande propósito!</p>
+        <h2 className="text-[#c6d0d6]  retrato-tablet:text-3xl text-2xl font-medium">{i18n.t('page_2.sponsor.title')}</h2>
+        <p className="text-white pt-4">{i18n.t('page_2.sponsor.description')}</p>
       </motion.header>
       <div className="guide_container mt-12 p-5 w-full">
         <div className="max-w-2xl pt-10 w-full m-auto grid grid-cols-1 retrato-tablet:grid-cols-2 gap-2">
@@ -35,8 +54,8 @@ export default function Guide() {
               </div>
             </header>
             <div>
-              <h4 className="text-xl text-white">Baixe o nosso preliminar, Prospectus</h4>
-              <small className="text-zinc-200 pt-5">Baixe o nosso prespectus e leia os termos e propostas!</small>
+              <h4 className="text-xl text-white">{i18n.t('page_2.sponsor.step_1.title')}</h4>
+              <small className="text-zinc-200 pt-5">{i18n.t('page_2.sponsor.step_1.description.part_1')} {i18n.t('page_2.sponsor.step_1.description.link')} {i18n.t('page_2.sponsor.step_1.description.part_3')}</small>
               <div className="mt-6 flex justify-end">
                 <a
                   href="https://drive.google.com/file/d/1z5b5c7jdxubWIIwT5yRj1_Yb8jAmCm4L/view?usp=sharing"
@@ -66,10 +85,10 @@ export default function Guide() {
               </div>
             </header>
             <div>
-              <h4 className="text-xl text-white">Envie-nos um email</h4>
+              <h4 className="text-xl text-white">{i18n.t('page_2.sponsor.step_2.title')}</h4>
               <small className="text-zinc-200 pt-5">
-                Envie-nos um email para <span className="text-[#f4372c]">info@aosc.social</span> com os dados da empresa
-                como nome, email, telefone e foto!
+                {i18n.t('page_2.sponsor.step_2.title')} <span className="text-[#f4372c]">info@aosc.social</span> {i18n.t('page_2.sponsor.step_2.description.part_2')} 
+                {i18n.t('page_2.sponsor.step_2.description.part_3')}
               </small>
               <div className="mt-6 flex justify-end">
                 <a

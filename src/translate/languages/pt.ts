@@ -12,10 +12,11 @@ const locales = {
              section_1:{
                 title:"APA Conference 2024",
                 description: 'Prepare-se para mergulhar em debates, workshops e descobertas que impulsionarão a inovação e o progresso na comunidade de programação de Angola. Junte-se a nós nessa jornada de aprendizado e colaboração.',
-                button: 'Submeter uma Palestra',
+                button1: 'Comprar Ingresso',
+                button2: 'Assista Online',  
                 date:{
-                    line_1: 'De 22 a 24',
-                    line_2 : 'de Março de 2024'
+                    line_1: '30 de Novembro 2024',
+                    line_2 : 'Data'
                 },
                 youtube_link: ' Assistir APA Conference 2020 recording',
                 timer:{
@@ -24,7 +25,8 @@ const locales = {
                     info_2:'horas',
                     info_3:'minutos',
                     info_4:'segundos'
-                }
+                },
+                
              },
            
              section_2:{
@@ -88,9 +90,16 @@ const locales = {
             },
 
             page_2:{
-                title:'Seja um Patrocinador',
+                nav: {
+                    link_1 : 'Inicio',
+                    link_2 : 'Benefícios',
+                    link_3 : 'Guia',
+                    link_4 : 'Contacto',
+                },
+                title:'Torne-se um Patrocinador',
                 description:'Faça parte da revolução tecnológica em Angola. Seja um patrocinador e impulsione a inovação conosco',
                 button:'Baixe o Prospectus',
+                prescription: 'Continue lendo',
                 benefit:{
                     title:'Benefícios',
                     description:'Conheça os benefícios de patrocinar',
@@ -108,8 +117,15 @@ const locales = {
                     },
                 },
                 sponsor:{
-                    title:'Patrocine Agora',
-                    description:'Para patrocinar, siga os passos abaixos',
+                    headline: 'Baixe o Prospectus',
+                    nav: {
+                        link_1 : 'Home',
+                        link_2 : 'Benefits',
+                        link_3 : 'Guide',
+                        link_4 : 'Contacts',
+                    },
+                    title:'Patrocine agora mesmo',
+                    description:'Veja abaixo como podes patrocinar e ajudar-nos neste grande propósito!',
                     step_1:{
                         title:'Baixe o nosso Prespectus',
                         description:{
@@ -124,7 +140,7 @@ const locales = {
                             part_1:'Envie-nos um email para ',
                             link:'apaconference@gmail.com ',
                             part_2:'com os ',
-                            part_3:'dados da empresa como nome, email, telefone e foto'
+                            part_3:'dados da empresa como nome, email, telefone e foto!'
                         }
                     }
                 }

@@ -1,6 +1,7 @@
+'use client';
 import Image from 'next/image';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect, useState } from 'react';
+import { i18n } from "@/translate/i18n";
 
 
 interface Link {
@@ -55,12 +56,26 @@ const BallIcon: React.FC<IconInterface> = ({ pathIcon, link }) => {
 };
 
 export default function Footer() {
-  //const {t, i18n } = useTranslation;
-  /*const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };*/
+  const I18N_KEY = "i18nextLng";
+
+  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
+  const [linkClicked, setLinkClicked] = useState(100);
+  const [showLanguage, setShowLanguage] = useState(false);
+  const [language, setLanguage] = useState<any>("PT");
+
+  const handleChangeLanguage = (value: any) => {
+    localStorage.setItem("i18nextLng", value);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
+    }
+  }, []);
+
   return (
-    <footer className="p-6" id="contacto">
+    <footer className="p-6" id="contacto" >
       <div className="full_container flex flex-col  w-full">
         <div className="grid grid-cols-1 paisagem-tablet:grid-cols-2 max-w-7xl m-auto w-full gap-5">
           <div className="flex justify-center">
@@ -68,11 +83,7 @@ export default function Footer() {
               <Image src="/logo_spa.png" alt="imagem-angola-open-source" width={200} height={200} />
               <div className="pt-5 w-4/5">
                 <p className="text-[12px] text-zinc-200">
-                  {/*t('nav.translations.link_1')*/}
-                  O Angola Open-Source Fest é um evento inovador que reúne apaixonados por tecnologia, programadores e
-                  especialistas em um ambiente de aprendizado e colaboração. Prepare-se para uma experiência única,
-                  repleta de debates inspiradores, workshops especializados e hackathons desafiadores que visam promover
-                  o progresso e a inovação na comunidade de programação de Angola.
+                  {i18n.t("footer.focus.description")}
                 </p>
               </div>
               {/* INFO */}
@@ -95,10 +106,10 @@ export default function Footer() {
               <h5 className="text-zinc-500">Navegação</h5>
             </header>
             <div className="flex items-center flex-wrap gap-10 pt-5">
-              <LinkItem name="inicio" url="#inicio" />
-              <LinkItem name="Benefícios" url="#beneficios" />
-              <LinkItem name="Guia" url="#guia" />
-              <LinkItem name="Contacto" url="#contacto" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_1')} url="#inicio" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_2')} url="#beneficios" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_3')} url="#guia" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_4')} url="#contacto" />
             </div>
           </div>
         </div>

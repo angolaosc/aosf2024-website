@@ -5,8 +5,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import ScrollLink from './ScrollLink';
+import { i18n } from "@/translate/i18n";
 
 export default function Header() {
+  const I18N_KEY = "i18nextLng";
+
+  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
+  const [linkClicked, setLinkClicked] = useState(100);
+  const [showLanguage, setShowLanguage] = useState(false);
+  const [language, setLanguage] = useState<any>("PT");
+
+  const handleChangeLanguage = (value: any) => {
+    localStorage.setItem("i18nextLng", value);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
+    }
+  }, []);
+
   const navbarRef = useRef<HTMLDivElement>(null);
   const buttonActiveOff = useRef<HTMLButtonElement>(null);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,16 +85,16 @@ export default function Header() {
           <nav>
             <ul className="flex justify-center items-center gap-16">
               <li>
-                <ScrollLink href="#inicio">Inicio</ScrollLink>
+                <ScrollLink href="#inicio">{i18n.t('page_2.sponsor.nav.link_1')}</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#beneficios">Benefícios</ScrollLink>
+                <ScrollLink href="#beneficios">{i18n.t('page_2.sponsor.nav.link_2')}</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#guia">Guia</ScrollLink>
+                <ScrollLink href="#guia">{i18n.t('page_2.sponsor.nav.link_3')}</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#contacto">Contacto</ScrollLink>
+                <ScrollLink href="#contacto">{i18n.t('page_2.sponsor.nav.link_4')}</ScrollLink>
               </li>
             </ul>
           </nav>

@@ -1,7 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { i18n } from "@/translate/i18n";
 
 interface Card {
   icon_path: string;
@@ -30,6 +31,23 @@ const CardIntro: React.FC<Card> = ({ icon_path, title, text, fromGradient }) => 
 };
 
 export default function IntroPage() {
+  const I18N_KEY = "i18nextLng";
+
+  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
+  const [linkClicked, setLinkClicked] = useState(100);
+  const [showLanguage, setShowLanguage] = useState(false);
+  const [language, setLanguage] = useState<any>("PT");
+
+  const handleChangeLanguage = (value: any) => {
+    localStorage.setItem("i18nextLng", value);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
+    }
+  }, []);
   return (
     <section id="inicio" className="retrato-tablet:mt-44 mt-36 w-full p-5">
       <motion.div
@@ -44,7 +62,7 @@ export default function IntroPage() {
             href="https://drive.google.com/file/d/1z5b5c7jdxubWIIwT5yRj1_Yb8jAmCm4L/view?usp=sharing"
             className="flex m-auto text-white border border-[#17222F] transition-all hover:bg-[#10171d] font-medium items-center py-1 pe-1 ps-3 justify-between w-64 retrato-tablet:w-80 rounded-full bg-[#0C1318]"
           >
-            <p>Baixe o Prospectus</p>
+            <p>{i18n.t('page_2.sponsor.headline')}</p>
             <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#f84438] text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,13 +81,13 @@ export default function IntroPage() {
           </a>
           <div className="text-center">
             <h1 className="paisagem-tablet:text-6xl retrato-tablet:text-5xl small:text-4xl text-3xl font-semibold pt-5">
-              Torne-se um Patrocinador
+              {i18n.t('page_2.title')}
             </h1>
             <div className="retrato-tablet:w-4/5 w-full m-auto">
               <p className="text-white pt-4 text-normal paisagem-tablet:text-xl">
-                Faça parte da revolução tecnológica em Angola. Seja um patrocinador e impulsione a inovação conosco
+                {i18n.t('page_2.description')}
               </p>
-              <p className="pt-5 text-[#88959e]">Continue lendo</p>
+              <p className="pt-5 text-[#88959e]">{i18n.t('page_2.prescription')}</p>
             </div>
 
             {/* ANIMATION SIGNAL SCROLL */}
@@ -109,21 +127,21 @@ export default function IntroPage() {
         <div className="max-w-6xl mt-10 w-full m-auto grid grid-cols-1 retrato-tablet:grid-cols-2 paisagem-tablet:grid-cols-3 gap-3">
           <CardIntro
             icon_path="/icons/marca.svg"
-            title="Visibilidade de Marca"
+            title={i18n.t('page_2.benefit.card_1.title')}
             fromGradient="#FD392D"
-            text="Os patrocinadores têm a oportunidade de aumentar sua visibilidade entre um público altamente segmentado. Sua marca será destacada nos materiais de marketing do evento, incluindo site, redes sociais, materiais promocionais e durante o próprio evento, gerando reconhecimento e alcance"
+            text={i18n.t('page_2.benefit.card_1.description')}
           />
           <CardIntro
             icon_path="/icons/network.svg"
-            title="Networking Estratégico"
+            title={i18n.t('page_2.benefit.card_2.title')}
             fromGradient="#0C1318"
-            text="Ao patrocinar o evento, as empresas têm acesso a uma rede exclusiva de profissionais da indústria, líderes de pensamento e potenciais parceiros de negócios. Isso proporciona oportunidades valiosas para estabelecer conexões significativas e explorar colaborações futuras"
+            text={i18n.t('page_2.benefit.card_2.description')}
           />
           <CardIntro
             icon_path="/icons/hand.svg"
-            title="Demonstração de Apoio à Comunidade"
+            title={i18n.t('page_2.benefit.card_3.title')}
             fromGradient="#0C1318"
-            text="O apoio a eventos locais e à comunidade de programação demonstra o comprometimento da empresa com o crescimento e desenvolvimento do setor tecnológico. Isso pode aumentar a reputação da marca como uma empresa que valoriza e investe no avanço da tecnologia e na formação de profissionais qualificados"
+            text={i18n.t('page_2.benefit.card_3.description')}
           />
         </div>
       </motion.section>

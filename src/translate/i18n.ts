@@ -5,10 +5,14 @@ import { locales } from './languages'
 i18n
     .use(LanguageDetector)
     .init({
-        debug: false,
+        debug: true,
         defaultNS: ['translations'],
-        fallbackLng: 'pt-BR',
+        fallbackLng: 'en',
+        lng: 'en',
         ns: ['translations'],
+        interpolation: {
+            escapeValue: false
+        },
         resources: locales
     })
 

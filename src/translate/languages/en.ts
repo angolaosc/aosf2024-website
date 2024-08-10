@@ -7,16 +7,17 @@ const locales = {
         link_3: 'About',
         link_4: 'Sponsors',
         link_5: 'Contacts',
-        button: 'Become a Sponsor',
+        button: 'Sponsor',
       },
       section_1: {
-        title: 'APA Conference 2024',
+        title: 'Angola Open-source Fest 2024',
         description:
           'Get ready to dive into debates, workshops, and discoveries that will drive innovation and progress in the Angolan programming community. Join us on this journey of learning and collaboration.',
-        button: 'Submit your CFP',
+        button1: 'Purchase a Ticket',
+        button2: 'Watch Online',  
         date: {
-          line_1: 'From 22nd to 24th',
-          line_2: 'March 2024',
+          line_1: '30 of November 2024',
+          line_2: 'Date',
         },
         youtube_link: ' Watch the APA Conference 2020 recording',
         timer: {
@@ -93,6 +94,7 @@ const locales = {
         description:
           'Be part of the technological revolution in Angola. Be a sponsor and boost innovation with us',
         button: 'Download the Prospectus now',
+        prescription: 'Keep reading',
         benefit: {
           title: 'Benefits of Sponsoring',
           description: 'Know the benefits of sponsoring the event',
@@ -113,6 +115,13 @@ const locales = {
           },
         },
         sponsor: {
+          headline: 'Download the prospectus',
+          nav: {
+            link_1 : 'Home',
+            link_2 : 'Benefits',
+            link_3 : 'Guide',
+            link_4 : 'Contacts',
+          },
           title: 'Sponsor us',
           description: 'To become a sponsor, follow the steps below',
           step_1: {

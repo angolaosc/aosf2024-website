@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import ScrollLink from '../../../patrocine/components/ScrollLink';
 import styles from './styles.module.css';
+import { i18n } from "@/translate/i18n";
 
 export default function Header() {
   const {boxButton, buttonSupport} = styles;
@@ -115,7 +116,7 @@ export default function Header() {
         >
           <div className={boxButton + " paisagem-tablet:hidden"}>
             <Link href={"/patrocine"} className={buttonSupport}>
-              {"Patrocine"}
+              {i18n.t("nav.button")}
             </Link>
           </div>
           <button

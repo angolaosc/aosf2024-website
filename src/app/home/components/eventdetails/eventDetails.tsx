@@ -10,7 +10,7 @@ import gup22 from '../../../../../public/Group 22.png';
 const EventDetails = () => {
   const { container } = styles;
   return (
-    <div className={container}>
+    <div className={container} id='guia'>
       <EventDetailsCardsSlide cards={data} />
       <br />
       <hr className='bg-custom-dark h-0.7 w-full m-8'/>

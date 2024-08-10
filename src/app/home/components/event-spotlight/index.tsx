@@ -10,6 +10,7 @@ import { IoCalendarClearOutline } from 'react-icons/io5';
 import { MdOutlineExplore } from 'react-icons/md';
 import SpotlightCard from '../spotlight-card/spotlight_card';
 import SpotlightSlide from '../spotlight-card/spotlight_card'; // Importa o SpotlightSlide
+import { i18n } from "@/translate/i18n";
 
 import spotlights from './spotlight'; // Certifique-se de que spotlights contém dados para os cards
 
@@ -29,11 +30,10 @@ const EventSpotlight = () => {
 
   return (
     <div className={eventspotlight_container} id="eventspotlights">
-      <div className={eventspotlight_container_body_1}>
+      <div className={eventspotlight_container_body_1} id='inicio'>
         <Image src={aosfest} width={470} height={148} alt="aosfest" />
         <p className={eventspotlight_container_body_1_description}>
-          Prepare-se para mergulhar em debates, workshops e descobertas que impulsionarão a inovação e o progresso na
-          comunidade de programação de Angola. Junte-se a nós nessa jornada de aprendizado e colaboração.
+          {i18n.t("section_1.description")}
         </p>
 
         <div className={eventspotlight_container_body_1_hero_1}>
@@ -41,10 +41,10 @@ const EventSpotlight = () => {
             className={eventspotlight_container_body_1_hero_1_button_1}
             href="https://www.commudle.com/communities/aosc/events"
           >
-            Comprar Ingresso <FiShoppingCart color="#F892121" />
+            {i18n.t('section_1.button1')} <FiShoppingCart color="#F892121" />
           </a>
           <a className={eventspotlight_container_body_1_hero_1_button_2} href="https://www.youtube.com/@angolaosc">
-            Assista Online <FiYoutube color="#F892121" />
+            {i18n.t('section_1.button2')} <FiYoutube color="#F892121" />
           </a>
         </div>
 
@@ -52,8 +52,8 @@ const EventSpotlight = () => {
           <div className={eventspotlight_container_body_1_hero_2_card}>
             <IoCalendarClearOutline />
             <div>
-              <h2>30 de Novembro 2024</h2>
-              <p>Data</p>
+              <h2>{i18n.t('section_1.date.line_1')}</h2>
+              <p>{i18n.t('section_1.date.line_2')}</p>
             </div>
           </div>
           <div className={eventspotlight_container_body_1_hero_2_seperator}></div>

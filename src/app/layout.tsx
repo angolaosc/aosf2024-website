@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Angola Open-Source Fest',
+  title: 'Angola Open-Source Fest 2024',
   description: 'This is the offical Angola Open-Source Fest 2024 website',
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <body className={`${poppins.className} ${inter.className}`}>{children}</body>
     </html>
   );
