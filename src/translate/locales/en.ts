@@ -3,8 +3,8 @@ const locales = {
     translations: {
       nav: {
         link_1: 'Event',
-        link_2: 'Agenda',
-        link_3: 'About',
+        link_2: 'Information',
+        link_3: 'Schedule',
         link_4: 'Sponsors',
         link_5: 'Contacts',
         button: 'Sponsor',
@@ -14,7 +14,7 @@ const locales = {
         description:
           'Get ready to dive into debates, workshops, and discoveries that will drive innovation and progress in the Angolan programming community. Join us on this journey of learning and collaboration.',
         button1: 'Purchase a Ticket',
-        button2: 'Watch Online',  
+        button2: 'Watch Online',
         date: {
           line_1: '30 of November 2024',
           line_2: 'Date',
@@ -46,8 +46,7 @@ const locales = {
         },
         card_3: {
           title: 'Accelerate',
-          description:
-            'Get a competitive edge by learning about the latest in innovative open solutions',
+          description: 'Get a competitive edge by learning about the latest in innovative open solutions',
         },
       },
 
@@ -91,8 +90,7 @@ const locales = {
 
       page_2: {
         title: 'Become a Sponsor',
-        description:
-          'Be part of the technological revolution in Angola. Be a sponsor and boost innovation with us',
+        description: 'Be part of the technological revolution in Angola. Be a sponsor and boost innovation with us',
         button: 'Download the Prospectus now',
         prescription: 'Keep reading',
         benefit: {
@@ -117,10 +115,10 @@ const locales = {
         sponsor: {
           headline: 'Download the prospectus',
           nav: {
-            link_1 : 'Home',
-            link_2 : 'Benefits',
-            link_3 : 'Guide',
-            link_4 : 'Contacts',
+            link_1: 'Home',
+            link_2: 'Benefits',
+            link_3: 'Guide',
+            link_4: 'Contacts',
           },
           title: 'Sponsor us',
           description: 'To become a sponsor, follow the steps below',
@@ -145,6 +143,6 @@ const locales = {
       },
     },
   },
-}
+};
 
-export { locales }
+export { locales as english };

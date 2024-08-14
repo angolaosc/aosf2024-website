@@ -1,8 +1,8 @@
 'use client';
+import { i18n } from '@/translate/i18n';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-import { i18n } from "@/translate/i18n";
+import React from 'react';
 
 interface Card {
   icon_path: string;
@@ -31,23 +31,6 @@ const CardIntro: React.FC<Card> = ({ icon_path, title, text, fromGradient }) => 
 };
 
 export default function IntroPage() {
-  const I18N_KEY = "i18nextLng";
-
-  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
-  const [linkClicked, setLinkClicked] = useState(100);
-  const [showLanguage, setShowLanguage] = useState(false);
-  const [language, setLanguage] = useState<any>("PT");
-
-  const handleChangeLanguage = (value: any) => {
-    localStorage.setItem("i18nextLng", value);
-    window.location.reload();
-  };
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
-    }
-  }, []);
   return (
     <section id="inicio" className="retrato-tablet:mt-44 mt-36 w-full p-5">
       <motion.div
@@ -84,9 +67,7 @@ export default function IntroPage() {
               {i18n.t('page_2.title')}
             </h1>
             <div className="retrato-tablet:w-4/5 w-full m-auto">
-              <p className="text-white pt-4 text-normal paisagem-tablet:text-xl">
-                {i18n.t('page_2.description')}
-              </p>
+              <p className="text-white pt-4 text-normal paisagem-tablet:text-xl">{i18n.t('page_2.description')}</p>
               <p className="pt-5 text-[#88959e]">{i18n.t('page_2.prescription')}</p>
             </div>
 

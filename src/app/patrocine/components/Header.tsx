@@ -5,24 +5,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import ScrollLink from './ScrollLink';
-import { i18n } from "@/translate/i18n";
+import { i18n } from '@/translate/i18n';
 
 export default function Header() {
-  const I18N_KEY = "i18nextLng";
+  const I18N_KEY = 'i18nextLng';
 
-  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
-  const [linkClicked, setLinkClicked] = useState(100);
-  const [showLanguage, setShowLanguage] = useState(false);
-  const [language, setLanguage] = useState<any>("PT");
+  const [language, setLanguage] = useState<string>('PT');
 
-  const handleChangeLanguage = (value: any) => {
-    localStorage.setItem("i18nextLng", value);
+  const handleChangeLanguage = (event: any) => {
+    localStorage.setItem('i18nextLng', event.target.value);
     window.location.reload();
   };
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
+    if (typeof window !== 'undefined' && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === 'pt' ? 'PT' : 'EN');
     }
   }, []);
 
@@ -106,7 +103,7 @@ export default function Header() {
           exit={{ opacity: 0, scale: 0 }}
           className="flex items-center gap-6"
         >
-          <button className="hidden retrato-tablet:flex border-[#17222F] border rounded-full font-medium text-[14px] items-center px-4 py-1.5 bg-[#0C1318] transition-all hover:bg-[#10171d] text-white gap-2">
+          <div className="flex border-[#17222F] border rounded-full text-white gap-2 items-center p-2 bg-[#0C1318] hover:bg-[#10171d]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -121,20 +118,20 @@ export default function Header() {
               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
               <path d="M2 12h20" />
             </svg>
-            PT
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-chevron-down size-5"
+            <select
+              onChange={handleChangeLanguage}
+              className="hidden retrato-tablet:flex  border-none font-medium text-[14px] items-center px-4 py-1.5 transition-all bg-[#0C1318] outline-none text-white gap-2"
             >
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </button>
+              <option value="pt" selected={language === 'PT'}>
+                {' '}
+                PT{' '}
+              </option>
+              <option value="en" selected={language === 'EN'}>
+                {' '}
+                EN{' '}
+              </option>
+            </select>
+          </div>
           <button
             ref={buttonActiveOff}
             className="text-white paisagem-tablet:hidden inline-flex transition-all hover:opacity-70"
