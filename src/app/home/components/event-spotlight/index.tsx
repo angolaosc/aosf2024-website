@@ -1,18 +1,13 @@
 'use client';
+import { i18n } from '@/translate/i18n';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import styles from './styles.module.css';
-import aosfest from '../../../../../public/aosfest.png';
-import { FiShoppingCart } from 'react-icons/fi';
-import { FiYoutube } from 'react-icons/fi';
+import { FiShoppingCart, FiYoutube } from 'react-icons/fi';
 import { IoCalendarClearOutline } from 'react-icons/io5';
 import { MdOutlineExplore } from 'react-icons/md';
-import SpotlightCard from '../spotlight-card/spotlight_card';
-import SpotlightSlide from '../spotlight-card/spotlight_card'; // Importa o SpotlightSlide
-import { i18n } from "@/translate/i18n";
-
-import spotlights from './spotlight'; // Certifique-se de que spotlights contém dados para os cards
+import aosfest from '../../../../../public/aosfest.png';
+import SpotlightSlide from '../spotlight-card/spotlight_card';
+import spotlights from './spotlight';
+import styles from './styles.module.css';
 
 const EventSpotlight = () => {
   const {
@@ -30,11 +25,9 @@ const EventSpotlight = () => {
 
   return (
     <div className={eventspotlight_container} id="eventspotlights">
-      <div className={eventspotlight_container_body_1} id='inicio'>
+      <div className={eventspotlight_container_body_1} id="inicio">
         <Image src={aosfest} width={470} height={148} alt="aosfest" />
-        <p className={eventspotlight_container_body_1_description}>
-          {i18n.t("section_1.description")}
-        </p>
+        <p className={eventspotlight_container_body_1_description}>{i18n.t('section_1.description')}</p>
 
         <div className={eventspotlight_container_body_1_hero_1}>
           <a

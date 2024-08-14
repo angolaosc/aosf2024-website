@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface EventTopics {
   done: boolean;
   titulo: string;
@@ -14,21 +12,21 @@ const topics: EventTopics[] = [
     titulo: 'Introdução à Inteligência Artificial',
     tempo: '09:00 - 10:30 GMT + 1',
     orador: 'Dr. Maria Silva',
-    descricaoOrador: 'CEO - TECHGENIUS'
+    descricaoOrador: 'CEO - TECHGENIUS',
   },
   {
     done: false,
     titulo: 'Introdução à Inteligência Artificial',
     tempo: '09:00 - 10:30 GMT + 1',
     orador: 'Dr. Maria Silva',
-    descricaoOrador: 'CEO - TECHGENIUS'
+    descricaoOrador: 'CEO - TECHGENIUS',
   },
   {
     done: true,
     titulo: 'Introdução à Inteligência Artificial',
     tempo: '09:00 - 10:30 GMT + 1',
     orador: 'Dr. Maria Silva',
-    descricaoOrador: 'CEO - TECHGENIUS'
+    descricaoOrador: 'CEO - TECHGENIUS',
   },
 ];
 
@@ -42,10 +40,7 @@ const EventTopics = () => {
 
       <div className="flex flex-wrap gap-4 justify-center">
         {topics.map((topic, index) => (
-          <div
-            key={index}
-            className="relative w-[406px] h-[485px] bg-custom-gradient rounded-lg p-5 text-white"
-          >
+          <div key={index} className="relative w-[406px] h-[485px] bg-custom-gradient rounded-lg p-5 text-white">
             <div
               className={`absolute top-5 left-5 w-32 h-10 rounded-full flex items-center justify-center text-lg font-medium text-white ${
                 topic.done ? 'bg-[#00F85F] bg-opacity-35' : 'bg-[#FF1500] bg-opacity-35'
@@ -62,6 +57,6 @@ const EventTopics = () => {
       </div>
     </div>
   );
-}
+};
 
 export default EventTopics;

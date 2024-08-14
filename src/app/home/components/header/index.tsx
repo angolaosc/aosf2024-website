@@ -1,4 +1,5 @@
 'use client';
+import { i18n } from '@/translate/i18n';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -6,25 +7,20 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import ScrollLink from '../../../patrocine/components/ScrollLink';
 import styles from './styles.module.css';
-import { i18n } from "@/translate/i18n";
 
 export default function Header() {
-  const {boxButton, buttonSupport} = styles;
-  const I18N_KEY = "i18nextLng";
+  const { boxButton, buttonSupport } = styles;
+  const I18N_KEY = 'i18nextLng';
+  const [language, setLanguage] = useState<string>('PT');
 
-  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
-  const [linkClicked, setLinkClicked] = useState(100);
-  const [showLanguage, setShowLanguage] = useState(false);
-  const [language, setLanguage] = useState<any>("PT");
-
-  const handleChangeLanguage = (value: any) => {
-    localStorage.setItem("i18nextLng", value);
+  const handleChangeLanguage = (event: any) => {
+    localStorage.setItem('i18nextLng', event.target.value);
     window.location.reload();
   };
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
+    if (typeof window !== 'undefined' && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === 'pt' ? 'PT' : 'EN');
     }
   }, []);
 
@@ -54,9 +50,7 @@ export default function Header() {
   }, []);
 
   const showOffCanvas = () => {
-    const backgroundOffCanvas = document.querySelector(
-      '.off_back'
-    ) as HTMLElement;
+    const backgroundOffCanvas = document.querySelector('.off_back') as HTMLElement;
     const offCanvas = document.querySelector('.off_nav') as HTMLElement;
 
     if (backgroundOffCanvas && offCanvas) {
@@ -89,34 +83,44 @@ export default function Header() {
           <nav>
             <ul className="flex justify-center items-center gap-16">
               <li>
-                <ScrollLink href="#inicio">Evento</ScrollLink>
+                <ScrollLink href="#inicio">{i18n.t('nav.link_1')}</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#eventspotlights">Informações</ScrollLink>
+                <ScrollLink href="#eventspotlights">{i18n.t('nav.link_2')}</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#guia">Agenda</ScrollLink>
+                <ScrollLink href="#guia">{i18n.t('nav.link_3')}</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#partnersSection">Patrocinadores</ScrollLink>
+                <ScrollLink href="#partnersSection">{i18n.t('nav.link_4')}</ScrollLink>
               </li>
               <li>
-                <ScrollLink href="#contacto">Contacto</ScrollLink>
+                <ScrollLink href="#contacto">{i18n.t('nav.link_5')}</ScrollLink>
               </li>
-              
             </ul>
           </nav>
         </div>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{duration: 0.6}}
-          exit={{opacity: 0, scale: 0}}
+          transition={{ duration: 0.6 }}
+          exit={{ opacity: 0, scale: 0 }}
           className="flex items-center gap-6"
         >
-          <div className={boxButton + " paisagem-tablet:hidden"}>
-            <Link href={"/patrocine"} className={buttonSupport}>
-              {i18n.t("nav.button")}
+          <select
+            onChange={handleChangeLanguage}
+            className="hidden retrato-tablet:flex  border-none font-medium text-[14px] items-center px-4 py-1.5 transition-all bg-[#0C1318] outline-none text-white gap-2"
+          >
+            <option value="pt" selected={language === 'PT'}>
+              PT
+            </option>
+            <option value="en" selected={language === 'EN'}>
+              EN
+            </option>
+          </select>
+          <div className={boxButton + ' paisagem-tablet:hidden'}>
+            <Link href={'/patrocine'} className={buttonSupport}>
+              {i18n.t('nav.button')}
             </Link>
           </div>
           <button

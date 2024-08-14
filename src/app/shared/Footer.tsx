@@ -1,8 +1,7 @@
 'use client';
+import { i18n } from '@/translate/i18n';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-import { i18n } from "@/translate/i18n";
-
+import React from 'react';
 
 interface Link {
   name: string;
@@ -56,35 +55,15 @@ const BallIcon: React.FC<IconInterface> = ({ pathIcon, link }) => {
 };
 
 export default function Footer() {
-  const I18N_KEY = "i18nextLng";
-
-  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
-  const [linkClicked, setLinkClicked] = useState(100);
-  const [showLanguage, setShowLanguage] = useState(false);
-  const [language, setLanguage] = useState<any>("PT");
-
-  const handleChangeLanguage = (value: any) => {
-    localStorage.setItem("i18nextLng", value);
-    window.location.reload();
-  };
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      setLanguage(localStorage.getItem(I18N_KEY) === "pt-BR" ? "PT" : "EN");
-    }
-  }, []);
-
   return (
-    <footer className="p-6" id="contacto" >
+    <footer className="p-6" id="contacto">
       <div className="full_container flex flex-col  w-full">
         <div className="grid grid-cols-1 paisagem-tablet:grid-cols-2 max-w-7xl m-auto w-full gap-5">
           <div className="flex justify-center">
             <div>
               <Image src="/logo_spa.png" alt="imagem-angola-open-source" width={200} height={200} />
               <div className="pt-5 w-4/5">
-                <p className="text-[12px] text-zinc-200">
-                  {i18n.t("footer.focus.description")}
-                </p>
+                <p className="text-[12px] text-zinc-200">{i18n.t('footer.focus.description')}</p>
               </div>
               {/* INFO */}
               <div className="pt-5">

@@ -1,20 +1,19 @@
-/* Estilos gerais */
 .container {
-  overflow: hidden; /* Esconde o excesso de conteúdo fora do contêiner */
+  overflow: hidden;
   position: relative;
 }
 
 .slideWrapper {
   display: flex;
   transform-origin: top left;
-  margin-top: 50px; /* Ajuste conforme necessário */
+  margin-top: 50px;
 }
 
 .spotlightCard {
   padding: 20px;
   border-radius: 15px;
   background: linear-gradient(180deg, rgba(71, 86, 94, 0.168627) 0%, rgba(0, 0, 0, 0) 100%);
-  margin: 10px; /* Espaçamento entre os cartões */
+  margin: 10px;
 }
 
 .title {
@@ -29,19 +28,18 @@
   color: white;
 }
 
-/* Media Queries para versões mobile */
 @media (max-width: 768px) {
   .slideWrapper {
-    flex-wrap: wrap; /* Aplica flex-wrap apenas em dispositivos móveis */
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) {
   .elevated1 {
-    margin-top: -50px; /* Ajuste a altura conforme necessário */
+    margin-top: -50px;
   }
 
   .elevated2 {
-    margin-top: -25px; /* Ajuste a altura conforme necessário */
+    margin-top: -25px;
   }
 }

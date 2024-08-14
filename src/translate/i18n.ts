@@ -1,19 +1,15 @@
-import i18n from 'i18next'
-import LanguageDetector from 'i18next-browser-languagedetector'
-import { locales } from './languages'
+import i18n from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import { locales } from './locales';
 
-i18n
-    .use(LanguageDetector)
-    .init({
-        debug: true,
-        defaultNS: ['translations'],
-        fallbackLng: 'en',
-        lng: 'en',
-        ns: ['translations'],
-        interpolation: {
-            escapeValue: false
-        },
-        resources: locales
-    })
+i18n.use(LanguageDetector).init({
+  debug: true,
+  fallbackLng: 'pt',
+  ns: 'translations',
+  interpolation: {
+    escapeValue: true,
+  },
+  resources: locales,
+});
 
-export { i18n }
+export { i18n };
