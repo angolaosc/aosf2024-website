@@ -1,5 +1,6 @@
+'use-client';
 import styles from './styles.module.css';
-
+import { i18n } from '@/translate/i18n';
 const PartnersSection = () => {
   const { container, sponsors, tpatrocinio, barra, platinum, gold, silver, logo } = styles;
 
@@ -75,7 +76,7 @@ const PartnersSection = () => {
       </div>
       <div className={barra}>
         <hr />
-        <h3 >Patrocinadores</h3>
+        <h3 >{i18n.t('section_5.title')}</h3>
         <hr />
       </div>
     </div>

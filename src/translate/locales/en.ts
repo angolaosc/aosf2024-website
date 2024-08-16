@@ -1,3 +1,6 @@
+import gup16 from '../../../public/Group 16.png';
+import gup22 from '../../../public/Group 22.png';
+
 const locales = {
   en: {
     translations: {
@@ -19,60 +22,92 @@ const locales = {
           line_1: '30 of November 2024',
           line_2: 'Date',
         },
-        youtube_link: ' Watch the APA Conference 2020 recording',
-        timer: {
-          title: 'Stay tuned',
-          info_1: 'days',
-          info_2: 'hours',
-          info_3: 'minutes',
-          info_4: 'seconds',
-        },
+        spotlights: [
+          {
+            icon: gup16,
+            title: 'Specialized Workshops',
+            description: 'Learn from experts in practical, interactive sessions.',
+            className: '',
+          },
+          {
+            icon: gup22,
+            title: 'Powerful Network',
+            description: 'Learn from experts in practical, interactive sessions.',
+            className: '',
+          },
+          {
+            icon: gup16,
+            title: 'Specialized Workshops',
+            description: 'Learn from experts in practical, interactive sessions.',
+            className: '',
+          },
+        ],
       },
 
       section_2: {
-        title: {
-          line_1: 'Explore',
-          line_2: 'The benefits of the event',
-        },
-        description: ' Be ready to immerse yourself in the world of programming and innovation!',
-        button: 'Submit your CFP',
-        card_1: {
-          title: 'Networking',
-          description: 'Networking, problem-solving, discussions, and face-to-face collaboration',
-        },
-        card_2: {
-          title: 'Learn',
-          description: 'Learn about the latest trends in computer science and open technologies',
-        },
-        card_3: {
-          title: 'Accelerate',
-          description: 'Get a competitive edge by learning about the latest in innovative open solutions',
+        details_List: [
+          {
+            icon: gup16,
+            title: 'PROJECT',
+            description:
+              "The Angola Open-Source Fest is a project that annually brings together professionals, students and technology enthusiasts in a space dedicated to exchanging knowledge and experiences about open source software. The event includes a series of activities such as lectures, workshops, hackathons, and practical sessions, all focused on empowering participants and promoting the development of innovative technological solutions.",
+          },
+          {
+            icon: gup22,
+            title: 'MISSION',
+            description:
+              "The mission of Angola Open-Source Fest is to foster a culture of collaboration and technological innovation in Angola, promoting the use and development of free and open source software. The festival seeks to democratize access to technological knowledge, empower the local community, and encourage the creation of sustainable solutions that respond to the country's specific needs.",
+          },
+        ],
+        detailStar: {
+          title: 'VALUES',
+          description: 'The Angola Open-Source Fest is an event that stands out as an important milestone for the technology community in Angola, bringing together developers, designers, engineers, and technology enthusiasts to celebrate and promote the use of free and open source software. This festival is not only a platform to share technical knowledge, but also a space that strengthens the fundamental values ​​that guide the open-source community in Angola.'
+,
         },
       },
 
+    
+      
+
       section_3: {
-        title: 'About the event',
-        description: 'Know more about the APA Conference',
-        card_1: {
-          title: 'About the project',
-          description:
-            'The Angolan Programmers Association (APA) is pleased to present this groundbreaking event. Our goal is to promote advancement and collaboration in the Angolan programming community. With a vision centered on innovation and professional growth, this event aims to bring together creative minds, industry leaders, and technology enthusiasts to share knowledge, explore emerging trends, and stimulate creativity.',
+        title: 'Innovation and Technological Trends',
+        description: 'Quinta-feira, 30 de Novembro - 2024',
+        state: {
+          done: 'Done',
+          canceled: 'Canceled'
         },
-        card_2: {
-          title: 'Mission',
-          description:
-            'Our mission is to provide an inclusive and educational environment, offering high-level learning and networking opportunities. We seek to empower participants with relevant skills, valuable insights, and meaningful connections that drive their careers forward and contribute to technological progress in Angola.',
-        },
+        topics: [
+          {
+            done: true,
+            titulo: 'Introduction to Artificial Intelligence',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Dr. Maria Silva',
+            descricaoOrador: 'CEO - TECHGENIUS',
+          },
+          {
+            done: false,
+            titulo: 'Introduction to Artificial Intelligence',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Dr. Maria Silva',
+            descricaoOrador: 'CEO - TECHGENIUS',
+          },
+          {
+            done: true,
+            titulo: 'Introduction to Artificial Intelligence',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Dr. Maria Silva',
+            descricaoOrador: 'CEO - TECHGENIUS',
+          },
+        ],
       },
 
       section_4: {
-        title: 'Watch APA Conference 2020',
-        description: 'Watch the APA Conference 2020 recording and get ready for the next edition.',
-        link: ' Watch now',
+        title: 'Other events',
+        
       },
 
       section_5: {
-        title: 'Sessions in APA Conference 2020',
+        title: 'Our Partners',
       },
       section_6: {
         title: 'Sponsors',

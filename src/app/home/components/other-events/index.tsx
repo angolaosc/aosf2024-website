@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { i18n } from '@/translate/i18n';
 import { useState } from 'react';
 
 interface Event {
@@ -29,7 +30,7 @@ const events: Event[] = [
 export default function Index() {
   return (
     <section className="px-4 md:px-32">
-      <h1 className="text-center text-white text-2xl md:text-[32px]">Outros eventos</h1>
+      <h1 className="text-center text-white text-2xl md:text-[32px]">{i18n.t('section_4.title')}</h1>
       <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-8 mt-10 md:mt-20">
         {events.map((event, index) => (
           <EventCard key={index} event={event} />

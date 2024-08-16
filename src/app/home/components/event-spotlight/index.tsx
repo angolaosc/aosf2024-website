@@ -6,7 +6,6 @@ import { IoCalendarClearOutline } from 'react-icons/io5';
 import { MdOutlineExplore } from 'react-icons/md';
 import aosfest from '../../../../../public/aosfest.png';
 import SpotlightSlide from '../spotlight-card/spotlight_card';
-import spotlights from './spotlight';
 import styles from './styles.module.css';
 
 const EventSpotlight = () => {
@@ -60,7 +59,7 @@ const EventSpotlight = () => {
         </div>
       </div>
       <div className={Spotlights}>
-        <SpotlightSlide spotlights={spotlights} /> {/* Adiciona o SpotlightSlide */}
+        <SpotlightSlide spotlights={i18n.t('section_1.spotlights', {returnObjects: true})} /> {/* Adiciona o SpotlightSlide */}
       </div>
     </div>
   );

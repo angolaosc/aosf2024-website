@@ -1,27 +1,25 @@
+'use client';
 import Image from 'next/image';
 import gup16 from '../../../../../public/Group 16.png';
 import EventDetailsCardsSlide from './card';
 import data from './data';
 import styles from './styles.module.css';
+import { i18n } from '@/translate/i18n';
 
 const EventDetails = () => {
   const { container } = styles;
   return (
     <div className={container} id="guia">
-      <EventDetailsCardsSlide cards={data} />
+      <EventDetailsCardsSlide cards={i18n.t('section_2.details_List', {returnObjects: true})} />
       <br />
       <hr className="bg-custom-dark h-0.7 w-full m-8" />
       <div>
         <div className="p-5 flex justify-between items-center">
           <Image src={gup16} width={40} height={40} alt="Spotlight Icon" />
-          <h2 className="text-white">VALORES</h2>
+          <h2 className="text-white">{i18n.t('section_2.detailStar.title')}</h2>
         </div>
         <p className="p-5 text-white">
-          A Associação dos Programadores Angolanos (APA) tem o prazer de apresentar este evento revolucionário. Nosso
-          objetivo é promover o avanço e a colaboração na comunidade de programação de Angola. Com uma visão centrada na
-          inovação e no crescimento profissional, este evento visa reunir mentes criativas, líderes da indústria e
-          entusiastas da tecnologia para compartilhar conhecimento, explorar tendências emergentes e estimular a
-          criatividade.
+          {i18n.t('section_2.detailStar.description')}
         </p>
       </div>
     </div>

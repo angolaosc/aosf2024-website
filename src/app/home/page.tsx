@@ -1,3 +1,4 @@
+'use client';
 import OffCanvas from '../patrocine/components/Offcanvas';
 import Footer from '../shared/Footer';
 import CompaniesSection from './components/companiesSection/companiesSection';

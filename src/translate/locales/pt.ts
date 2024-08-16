@@ -1,3 +1,6 @@
+import gup16 from '../../../public/Group 16.png';
+import gup22 from '../../../public/Group 22.png';
+
 const locales = {
   pt: {
     translations: {
@@ -19,61 +22,90 @@ const locales = {
           line_1: '30 de Novembro 2024',
           line_2: 'Data',
         },
-        youtube_link: ' Assistir APA Conference 2020 recording',
-        timer: {
-          title: 'Fique ligado',
-          info_1: 'dia',
-          info_2: 'horas',
-          info_3: 'minutos',
-          info_4: 'segundos',
-        },
+        spotlights: [
+          {
+            icon: gup16,
+            title: 'Workshops Especializados',
+            description: 'Aprenda com especialistas em sessões práticas e interativas.',
+            className: '',
+          },
+          {
+            icon: gup22,
+            title: 'Network Poderoso',
+            description: 'Aprenda com especialistas em sessões práticas e interativas.',
+            className: '',
+          },
+          {
+            icon: gup16,
+            title: 'Workshops Especializados',
+            description: 'Aprenda com especialistas em sessões práticas e interativas.',
+            className: '',
+          },
+        ],
+        
       },
 
       section_2: {
-        title: {
-          line_1: 'Explore',
-          line_2: 'os Benefícios do Evento',
-        },
-        description: ' Prepare-se para uma imersão completa no mundo da programação e da inovação!',
-        button: 'Submeter uma Palestra',
-        card_1: {
-          title: 'Networking',
-          description: 'Resolução de problemas, discussões e colaboração face a face',
-        },
-        card_2: {
-          title: 'Aprender',
-          description: 'Aprenda sobre as últimas tendências em ciência da computação e tecnologias abertas',
-        },
-        card_3: {
-          title: 'Acelerar',
-          description:
-            'Obtenha uma vantagem competitiva aprendendo sobre o que há de mais moderno em soluções abertas inovadoras',
+        details_List: [
+          {
+            icon: gup16,
+            title: 'PROJECTO',
+            description:
+              "O Angola Open-Source Fest é uma iniciativa anual que reúne profissionais, estudantes e entusiastas de tecnologia em Angola para um evento dedicado ao software de código aberto. Com palestras, workshops e hackathons, o festival capacita os participantes e promove o desenvolvimento de soluções tecnológicas inovadoras. O projeto também inclui atividades contínuas, como programas de mentoria e projetos colaborativos, que fortalecem a comunidade tecnológica local e incentivam a criação de soluções sustentáveis para o futuro de Angola.",
+          },
+          {
+            icon: gup22,
+            title: 'MISSÃO',
+            description:
+              'A missão do Angola Open-Source Fest é promover a inovação tecnológica em Angola, incentivando o uso de software livre e de código aberto. O evento busca democratizar o acesso ao conhecimento, capacitar a comunidade local e criar soluções tecnológicas que atendam às necessidades do país. Ao unir pessoas de diferentes áreas, o festival constrói uma comunidade inclusiva e diversificada, capaz de impulsionar o desenvolvimento social e econômico de Angola.',
+          },
+        ],
+        detailStar: {
+          title: 'VALORES',
+          description:'Os valores do Angola Open-Source Fest refletem o compromisso com a construção de uma comunidade tecnológica forte, inclusiva e inovadora em Angola. A colaboração e o trabalho em equipe são centrais, promovendo uma rede de apoio que incentiva a troca de ideias e experiências. O festival também valoriza o acesso ao conhecimento, acreditando que a tecnologia deve ser acessível a todos, independentemente de sua condição social. A inovação é outro valor fundamental, estimulando a criatividade e o progresso tecnológico por meio de soluções originais que podem transformar a sociedade. A inclusão e a diversidade são igualmente importantes, garantindo um ambiente acolhedor para todos, enquanto a sustentabilidade é promovida através de práticas que minimizam o impacto ambiental. Por fim, a autonomia e a independência tecnológica são encorajadas pelo uso de software open-source, capacitando a comunidade a desenvolver soluções que atendam às necessidades específicas de Angola, fortalecendo a soberania tecnológica do país. Esses valores guiam todas as atividades do festival, com o objetivo de posicionar Angola como um hub de inovação tecnológica na África.',
+
         },
       },
 
       section_3: {
-        title: 'Informações do Evento',
-        description: 'Saiba um pouco mais sobre a Conferência APA',
-        card_1: {
-          title: 'Sobre o Projeto',
-          description:
-            'A Associação dos Programadores Angolanos (APA) tem o prazer de apresentar este evento revolucionário. Nosso objetivo é promover o avanço e a colaboração na comunidade de programação de Angola. Com uma visão centrada na inovação e no crescimento profissional, este evento visa reunir mentes criativas, líderes da indústria e entusiastas da tecnologia para compartilhar conhecimento, explorar tendências emergentes e estimular a criatividade.',
+        title: 'Inovação and tecnologicas Trends',
+        description: 'Quinta-feira, 30 de Novembro - 2024',
+        state: {
+          done: 'Realizado',
+          canceled: 'Cancelado'
         },
-        card_2: {
-          title: 'Missão',
-          description:
-            'Nossa missão é fornecer um ambiente inclusivo e educacional, oferecendo oportunidades de aprendizado e networking de alto nível. Buscamos capacitar os participantes com habilidades relevantes, insights valiosos e conexões significativas que impulsionem suas carreiras e contribuam para o progresso tecnológico em Angola.',
-        },
+        topics: [
+          {
+            done: true,
+            titulo: 'Introdução à Inteligência Artificial',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Dr. Maria Silva',
+            descricaoOrador: 'CEO - TECHGENIUS',
+          },
+          {
+            done: false,
+            titulo: 'Introdução à Inteligência Artificial',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Dr. Maria Silva',
+            descricaoOrador: 'CEO - TECHGENIUS',
+          },
+          {
+            done: true,
+            titulo: 'Introdução à Inteligência Artificial',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Dr. Maria Silva',
+            descricaoOrador: 'CEO - TECHGENIUS',
+          },
+        ],
       },
 
       section_4: {
-        title: 'Assistir APA 2020',
-        description: 'Assista a reposição do evento aqui, neste espaço reservado.',
-        link: ' Assistir Agora',
+        title: 'Outros eventos',
+        
       },
 
       section_5: {
-        title: 'Sessões da APA 2020',
+        title: 'Patrocinadores',
       },
       section_6: {
         title: 'Patrocinadores',
