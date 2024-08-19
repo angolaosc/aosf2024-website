@@ -148,7 +148,7 @@ const locales = {
           },
         },
         sponsor: {
-          headline: 'Download the prospectus',
+          headline: 'Navigation',
           nav: {
             link_1: 'Home',
             link_2: 'Benefits',

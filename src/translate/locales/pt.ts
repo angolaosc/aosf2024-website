@@ -153,7 +153,7 @@ const locales = {
           },
         },
         sponsor: {
-          headline: 'Baixe o Prospectus',
+          headline: 'Navegação',
           nav: {
             link_1: 'Home',
             link_2: 'Benefits',

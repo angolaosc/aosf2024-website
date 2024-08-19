@@ -58,7 +58,7 @@ const EventSpotlight = () => {
           </div>
         </div>
       </div>
-      <div className={Spotlights}>
+      <div className={Spotlights} id="beneficios">
         <SpotlightSlide spotlights={i18n.t('section_1.spotlights', {returnObjects: true})} /> {/* Adiciona o SpotlightSlide */}
       </div>
     </div>

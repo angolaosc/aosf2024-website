@@ -59,7 +59,7 @@ export default function Footer() {
     <footer className="p-6" id="contacto">
       <div className="full_container flex flex-col  w-full">
         <div className="grid grid-cols-1 paisagem-tablet:grid-cols-2 max-w-7xl m-auto w-full gap-5">
-          <div className="flex justify-center">
+          <div className="flex justify-center"> 
             <div>
               <Image src="/logo_spa.png" alt="imagem-angola-open-source" width={200} height={200} />
               <div className="pt-5 w-4/5">
@@ -82,7 +82,7 @@ export default function Footer() {
           {/* LINKS */}
           <div>
             <header>
-              <h5 className="text-zinc-500">Navegação</h5>
+              <h5 className="text-zinc-500">{i18n.t('page_2.sponsor.headline')}</h5>
             </header>
             <div className="flex items-center flex-wrap gap-10 pt-5">
               <LinkItem name={i18n.t('page_2.sponsor.nav.link_1')} url="#inicio" />

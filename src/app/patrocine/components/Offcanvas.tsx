@@ -1,9 +1,23 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ScrollLink from './ScrollLink';
-
+import { i18n } from '@/translate/i18n';
 export default function OffCanvas() {
+
+  const I18N_KEY = 'i18nextLng';
+  const [language, setLanguage] = useState<string>('PT');
+
+  const handleChangeLanguage = (event: any) => {
+    localStorage.setItem('i18nextLng', event.target.value);
+    window.location.reload();
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      setLanguage(localStorage.getItem(I18N_KEY) === 'pt' ? 'PT' : 'EN');
+    }
+  }, []);
   const closeButton = useRef<HTMLButtonElement>(null);
   const allItems = useRef<NodeListOf<Element> | null>(null);
 
@@ -133,7 +147,7 @@ export default function OffCanvas() {
               </svg>
             </div>
           </ScrollLink>
-          <ScrollLink href="#inicio">
+          <ScrollLink href="#contacto">
             <div className="flex items-center justify-between nav_link">
               Contacto
               <svg
@@ -151,7 +165,21 @@ export default function OffCanvas() {
               </svg>
             </div>
           </ScrollLink>
+          <select
+              onChange={handleChangeLanguage}
+              className="retrato-tablet:flex  border-none font-medium text-[14px] items-center px-4 py-1.5 transition-all bg-[#0C1318] outline-none text-white gap-2"
+            >
+              <option value="pt" selected={language === 'PT'}>
+                {' '}
+                PT{' '}
+              </option>
+              <option value="en" selected={language === 'EN'}>
+                {' '}
+                EN{' '}
+              </option>
+            </select>
         </div>
+        
       </div>
     </aside>
   );
