@@ -18,7 +18,7 @@ export default function HomePage() {
         <CompaniesSection />
         <EventDetails />
         <EventTopics />
-        <OtherEvents />
+        
         <PartnersSection />
       </main>
       <Footer />
