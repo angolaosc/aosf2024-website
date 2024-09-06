@@ -6,6 +6,11 @@ const PartnersSection = () => {
 
   return (
     <div className={container} id="partnersSection">
+      <div className={barra}>
+        <hr />
+        <h3 >{i18n.t('section_5.title')}</h3>
+        <hr />
+      </div>
       <div className={sponsors}>
         <div className={platinum}>
           <h3 className={tpatrocinio}>Platinum</h3>
@@ -21,18 +26,14 @@ const PartnersSection = () => {
           </div>
         </div>
         <div className={silver}>
-  <h3 className={tpatrocinio}>Silver</h3>
-  <div className={logo}>
-    <img src="/typo3.png" className="logo" />
-  </div>
-</div>
+          <h3 className={tpatrocinio}>Silver</h3>
+          <div className={logo}>
+            <img src="/typo3.png" className="logo" />
+          </div>
+        </div>
 
       </div>
-      <div className={barra}>
-        <hr />
-        <h3 >{i18n.t('section_5.title')}</h3>
-        <hr />
-      </div>
+      
     </div>
   );
 };

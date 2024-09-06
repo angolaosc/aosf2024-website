@@ -17,7 +17,7 @@ export default function HomePage() {
         <EventSpotlight />
         <CompaniesSection />
         <EventDetails />
-        <EventTopics />
+        {/*<EventTopics />*/}
         
         <PartnersSection />
       </main>
