@@ -4,7 +4,7 @@ const CompaniesSection = () => {
   const { photos } = styles;
   return (
     <div className={photos}>
-      <img src="/typo3.png" width={152} height={150}/>  
+      <img src="/typo3.png" width={182} height={150}/>  
       
     </div>
   );
