@@ -99,7 +99,7 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-        </div>
+        </div>gi
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
