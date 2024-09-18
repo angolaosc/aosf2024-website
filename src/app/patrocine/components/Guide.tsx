@@ -52,21 +52,34 @@ export default function Guide() {
                 </svg>
               </div>
             </header>
-            <div>
-              <h4 className="text-xl text-white">{i18n.t('page_2.sponsor.step_1.title')}</h4>
-              <small className="text-zinc-200 pt-5">
-                {i18n.t('page_2.sponsor.step_1.description.part_1')} {i18n.t('page_2.sponsor.step_1.description.link')}{' '}
-                {i18n.t('page_2.sponsor.step_1.description.part_3')}
-              </small>
-              <div className="mt-6 flex justify-end">
-                <a
-                  href="https://drive.google.com/file/d/1z5b5c7jdxubWIIwT5yRj1_Yb8jAmCm4L/view?usp=sharing"
-                  className="block transition-all hover:bg-[#cf322a] text-[15px] text-white px-5 py-2.5 rounded-lg bg-[#F4372C]"
-                >
-                  Download
-                </a>
+              <div>
+                <h4 className="text-xl text-white">{i18n.t('page_2.sponsor.step_1.title')}</h4>
+                <small className="text-zinc-200 pt-5">
+                  {i18n.t('page_2.sponsor.step_1.description.part_1')} {i18n.t('page_2.sponsor.step_1.description.link')}{' '}
+                  {i18n.t('page_2.sponsor.step_1.description.part_3')}
+                </small>
+                <div className='flex gap-4'>
+                  <div className="mt-6 flex justify-end">
+                    <a
+                      href="https://drive.google.com/file/d/1sidxWtdY94HSGebo977ecLjDbBS2vpX1/view?usp=drivesdk"
+                      className="block transition-all hover:bg-[#cf322a] text-[15px] text-white px-5 py-2.5 rounded-lg bg-[#F4372C]"
+                    >
+                      Download EN
+                    </a>
+                  </div>
+                  <div className="mt-6 flex justify-end">
+                    <a
+                      href="https://drive.google.com/file/d/1fB4sh7JEOwpCCXMD3zH7hOosOpUAtNid/view?usp=drivesdk"
+                      className="block transition-all hover:bg-[#cf322a] text-[15px] text-white px-5 py-2.5 rounded-lg bg-[#F4372C]"
+                    >
+                      Download PT
+                    </a>
+                  </div>
+                </div>
+                
               </div>
-            </div>
+  
+            
           </div>
           <div className="h-96 flex flex-col justify-between p-5 bg-gradient-to-br rounded-lg border border-[#17222F] from-[#0C1318] to-transparent">
             <header>
@@ -98,7 +111,7 @@ export default function Guide() {
                   href="#"
                   className="block text-[15px] text-white px-5 py-2.5 transition-all hover:border-white rounded-lg bg-transparent border border-[#17222F]"
                 >
-                  Enviar
+                  {i18n.t('page_2.sponsor.buttonSend')}
                 </a>
               </div>
             </div>

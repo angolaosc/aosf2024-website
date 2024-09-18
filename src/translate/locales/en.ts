@@ -176,6 +176,7 @@ const locales = {
               part_3: 'your company logo and the sponsorship package you want to purchase',
             },
           },
+          buttonSend: "Send"
         },
       },
     },

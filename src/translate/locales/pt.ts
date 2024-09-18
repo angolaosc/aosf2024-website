@@ -172,6 +172,7 @@ const locales = {
               part_3: 'e leia os termos e propostas',
             },
           },
+          
           step_2: {
             title: 'Envie-nos um email',
             description: {
@@ -181,6 +182,7 @@ const locales = {
               part_3: 'dados da empresa como nome, email, telefone e foto!',
             },
           },
+          buttonSend: "Enviar"
         },
       },
     },
