@@ -15,7 +15,7 @@ export default function HomePage() {
       <Header />
       <main>
         <EventSpotlight />
-        <CompaniesSection />
+        {/*<CompaniesSection />*/}
         <EventDetails />
         {/*<EventTopics />*/}
         
