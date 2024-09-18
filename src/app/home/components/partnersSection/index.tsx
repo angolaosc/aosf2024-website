@@ -12,7 +12,8 @@ const PartnersSection = () => {
         <hr />
       </div>
       <div className={sponsors}>
-        <div className={platinum}>
+      {
+        /*<div className={platinum}>
           <h3 className={tpatrocinio}>Platinum</h3>
           <div className={logo}>
             
@@ -25,13 +26,14 @@ const PartnersSection = () => {
             
           </div>
         </div>
+        */
         <div className={silver}>
           <h3 className={tpatrocinio}>Silver</h3>
           <div className={logo}>
             <img src="/typo3.png" className="logo" />
           </div>
         </div>
-
+      }
       </div>
       
     </div>
