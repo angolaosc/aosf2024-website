@@ -89,7 +89,7 @@ export default function Guide() {
             <div>
               <h4 className="text-xl text-white">{i18n.t('page_2.sponsor.step_2.title')}</h4>
               <small className="text-zinc-200 pt-5">
-                {i18n.t('page_2.sponsor.step_2.title')} <span className="text-[#f4372c]">info@aosc.social</span>{' '}
+                {i18n.t('page_2.sponsor.step_2.title')} <span className="text-[#f4372c]">info@angolaosc.org</span>{' '}
                 {i18n.t('page_2.sponsor.step_2.description.part_2')}
                 {i18n.t('page_2.sponsor.step_2.description.part_3')}
               </small>

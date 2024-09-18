@@ -68,7 +68,7 @@ export default function Footer() {
               {/* INFO */}
               <div className="pt-5">
                 <a href="#" className="text-white transition-all hover:underline">
-                  info@aosc.social
+                  info@angolaosc.org
                 </a>
                 <div className="flex items-center flex-wrap gap-4 pt-4">
                   <p className="text-white">+244 936 853 728 </p>
