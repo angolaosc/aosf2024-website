@@ -17,7 +17,9 @@ const locales = {
         description:
           'Prepare-se para mergulhar em debates, workshops e descobertas que impulsionarão a inovação e o progresso na comunidade de programação de Angola. Junte-se a nós nessa jornada de aprendizado e colaboração.',
         button1: 'Comprar Ingresso',
-        button2: 'Assista Online',
+        button2: 'Assistir AOSFest 2023 Online',
+        toastMessage: 'Em breve estará disponível',
+        closeButton: "Fechar",
         date: {
           line_1: '30 de Novembro 2024',
           line_2: 'Data',

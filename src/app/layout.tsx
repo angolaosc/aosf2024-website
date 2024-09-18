@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
+import { Toaster } from 'react-hot-toast';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -29,7 +30,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${poppins.className} ${inter.className}`}>{children}</body>
+      <body className={`${poppins.className} ${inter.className}`}>
+        <Toaster position='bottom-center'/>
+        {children}
+      </body>
     </html>
   );
 }

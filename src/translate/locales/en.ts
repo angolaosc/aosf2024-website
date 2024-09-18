@@ -17,7 +17,9 @@ const locales = {
         description:
           'Get ready to dive into debates, workshops, and discoveries that will drive innovation and progress in the Angolan programming community. Join us on this journey of learning and collaboration.',
         button1: 'Purchase a Ticket',
-        button2: 'Watch Online',
+        button2: 'Assistir AOSFest 2023 Online',
+        toastMessage: 'Coming soon',
+        closeButton: "Close",
         date: {
           line_1: '30 of November 2024',
           line_2: 'Date',
