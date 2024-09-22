@@ -34,13 +34,13 @@ const locales = {
           {
             icon: gup22,
             title: 'Network Poderoso',
-            description: 'Aprenda com especialistas em sessões práticas e interativas.',
+            description: 'Conecte-se com uma Comunidade de Inovadores',
             className: '',
           },
           {
             icon: gup16,
             title: 'Workshops Especializados',
-            description: 'Aprenda com especialistas em sessões práticas e interativas.',
+            description: 'Participe de Desafios Reais e Colabore com a Comunidade',
             className: '',
           },
         ],
@@ -158,9 +158,9 @@ const locales = {
           headline: 'Navegação',
           nav: {
             link_1: 'Home',
-            link_2: 'Benefits',
-            link_3: 'Guide',
-            link_4: 'Contacts',
+            link_2: 'Benefícios',
+            link_3: 'Guia',
+            link_4: 'Contactos',
           },
           title: 'Patrocine agora mesmo',
           description: 'Veja abaixo como podes patrocinar e ajudar-nos neste grande propósito!',

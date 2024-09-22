@@ -16,8 +16,8 @@ const locales = {
         title: 'Angola Open-source Fest 2024',
         description:
           'Get ready to dive into debates, workshops, and discoveries that will drive innovation and progress in the Angolan programming community. Join us on this journey of learning and collaboration.',
-        button1: 'Purchase a Ticket',
-        button2: 'Assistir AOSFest 2023 Online',
+        button1: 'Buy a Ticket',
+        button2: 'Watch AOSFest 2023 Online',
         toastMessage: 'Coming soon',
         closeButton: "Close",
         date: {
@@ -28,19 +28,19 @@ const locales = {
           {
             icon: gup16,
             title: 'Specialized Workshops',
-            description: 'Learn from experts in practical, interactive sessions.',
+            description: 'Learn from Experts in Practical and Interactive Sessions',
             className: '',
           },
           {
             icon: gup22,
-            title: 'Powerful Network',
-            description: 'Learn from experts in practical, interactive sessions.',
+            title: 'Powerful Networking',
+            description: 'Connect with a Community of Innovators',
             className: '',
           },
           {
             icon: gup16,
-            title: 'Specialized Workshops',
-            description: 'Learn from experts in practical, interactive sessions.',
+            title: 'Challenging Hackathons',
+            description: 'Engage in Real-World Challenges and Collaborate with the Community',
             className: '',
           },
         ],

@@ -85,10 +85,10 @@ export default function Footer() {
               <h5 className="text-zinc-500">{i18n.t('page_2.sponsor.headline')}</h5>
             </header>
             <div className="flex items-center flex-wrap gap-10 pt-5">
-              <LinkItem name={i18n.t('page_2.nav.link_1')} url="#inicio" />
-              <LinkItem name={i18n.t('page_2.nav.link_2')} url="#beneficios" />
-              <LinkItem name={i18n.t('page_2.nav.link_3')} url="#guia" />
-              <LinkItem name={i18n.t('page_2.nav.link_4')} url="#contacto" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_1')} url="#inicio" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_2')} url="#beneficios" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_3')} url="#guia" />
+              <LinkItem name={i18n.t('page_2.sponsor.nav.link_4')} url="#contacto" />
             </div>
           </div>
         </div>

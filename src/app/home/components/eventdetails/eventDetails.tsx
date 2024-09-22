@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import gup16 from '../../../../../public/Group 16.png';
 import EventDetailsCardsSlide from './card';
-import data from './data';
 import styles from './styles.module.css';
 import { i18n } from '@/translate/i18n';
 
