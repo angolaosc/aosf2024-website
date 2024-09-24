@@ -89,7 +89,7 @@ export default function OffCanvas() {
         <div className="pt-10 grid grid-cols-1 gap-10">
           <ScrollLink href="#inicio">
             <div className="flex justify-between items-center nav_link">
-              Inicio
+              {i18n.t('page_2.sponsor.nav.link_1')}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -107,7 +107,7 @@ export default function OffCanvas() {
           </ScrollLink>
           <ScrollLink href="#beneficios">
             <div className="flex items-center justify-between nav_link">
-              Beneficios
+              {i18n.t('page_2.sponsor.nav.link_2')}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -126,7 +126,7 @@ export default function OffCanvas() {
           </ScrollLink>
           <ScrollLink href="#guia">
             <div className="flex items-center justify-between nav_link">
-              Guia
+              {i18n.t('page_2.sponsor.nav.link_3')}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -149,7 +149,7 @@ export default function OffCanvas() {
           </ScrollLink>
           <ScrollLink href="#contacto">
             <div className="flex items-center justify-between nav_link">
-              Contacto
+              {i18n.t('page_2.sponsor.nav.link_4')}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
