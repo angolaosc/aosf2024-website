@@ -64,7 +64,7 @@ export default function Guide() {
                       href="https://drive.google.com/file/d/1sidxWtdY94HSGebo977ecLjDbBS2vpX1/view?usp=drivesdk"
                       className="block transition-all hover:bg-[#cf322a] text-[15px] text-white px-5 py-2.5 rounded-lg bg-[#F4372C]"
                     >
-                      Download EN
+                      Download PT
                     </a>
                   </div>
                   <div className="mt-6 flex justify-end">
@@ -72,7 +72,7 @@ export default function Guide() {
                       href="https://drive.google.com/file/d/1fB4sh7JEOwpCCXMD3zH7hOosOpUAtNid/view?usp=drivesdk"
                       className="block transition-all hover:bg-[#cf322a] text-[15px] text-white px-5 py-2.5 rounded-lg bg-[#F4372C]"
                     >
-                      Download PT
+                      Download EN
                     </a>
                   </div>
                 </div>
