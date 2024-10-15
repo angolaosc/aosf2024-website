@@ -12,28 +12,33 @@ const PartnersSection = () => {
         <hr />
       </div>
       <div className={sponsors}>
-      {
-        /*<div className={platinum}>
+      
+        <div className={platinum}>
           <h3 className={tpatrocinio}>Platinum</h3>
           <div className={logo}>
-            
-            
+            <img src="/KINSARI_RGB 1.svg" className="logo Kinsari" />
           </div>
         </div>
-        <div className={gold}>
-          <h3 className={tpatrocinio}>Gold</h3>
-          <div className={logo}>
-            
+
+        {
+        /*
+          <div className={gold}>
+            <h3 className={tpatrocinio}>Gold</h3>
+            <div className={logo}>
+              
+            </div>
           </div>
-        </div>
         */
+        }
+        
+        
         <div className={silver}>
           <h3 className={tpatrocinio}>Silver</h3>
           <div className={logo}>
-            <img src="/typo3.png" className="logo" />
+            <img src="/typo3.png" className="logo Typo3" />
           </div>
         </div>
-      }
+      
       </div>
       
     </div>
