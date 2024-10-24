@@ -3,7 +3,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { locales } from './locales';
 
 i18n.use(LanguageDetector).init({
-  debug: true,
+  debug: false,
   fallbackLng: 'pt',
   ns: 'translations',
   interpolation: {
