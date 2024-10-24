@@ -8,29 +8,6 @@ interface EventTopics {
 }
 
 const Topics: EventTopics[]= i18n.t('section_3.topics', {returnObjects: true});
-const topics: EventTopics[] = [
-  {
-    done: true,
-    titulo: 'Introdução à Inteligência Artificial',
-    tempo: '09:00 - 10:30 GMT + 1',
-    orador: 'Dr. Maria Silva',
-    descricaoOrador: 'CEO - TECHGENIUS',
-  },
-  {
-    done: false,
-    titulo: 'Introdução à Inteligência Artificial',
-    tempo: '09:00 - 10:30 GMT + 1',
-    orador: 'Dr. Maria Silva',
-    descricaoOrador: 'CEO - TECHGENIUS',
-  },
-  {
-    done: true,
-    titulo: 'Introdução à Inteligência Artificial',
-    tempo: '09:00 - 10:30 GMT + 1',
-    orador: 'Dr. Maria Silva',
-    descricaoOrador: 'CEO - TECHGENIUS',
-  },
-];
 
 const EventTopics = () => {
   return (
