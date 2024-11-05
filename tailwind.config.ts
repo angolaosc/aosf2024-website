@@ -29,10 +29,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "custom-gradient": "linear-gradient(180deg, rgba(3, 11, 16, 0.23) 2.2%, rgba(71, 86, 94, 0.23) 100%)"
+        "custom-gradient": "linear-gradient(180deg, #182934 0%, #030B10 100%)"
       },
       colors: {
-        'custom-dark' : '#111D25'
+        'custom-dark' : '#111D25',
+        'custom-color': '#213441',
+        'workshop-color': '#00B0F9',
+        'palestra-color': "#FF6F66",
+        'barra-color': "#213441"
       }
     },
   },
