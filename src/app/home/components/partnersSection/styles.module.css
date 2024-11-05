@@ -13,11 +13,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around; /* Espaçamento entre as categorias */
+  justify-content: space-around; 
   width: 100%;
-  max-width: 1200px; /* Limite de largura máxima */
+  max-width: 1200px; 
   margin: 0 auto;
-  padding: 20px; /* Espaçamento interno */
+  padding: 20px; 
 }
 
 .tpatrocinio {
@@ -49,7 +49,7 @@
   margin: 0 50px;
 }
 
-/* Estilos específicos para categorias de patrocinadores */
+
 .platinum,
 .gold,
 .silver {
@@ -59,9 +59,7 @@
 }
 
 .logo {
-  /* Ajuste conforme necessário */
-
-  border-radius: 10px; /* Cantos arredondados */
+  border-radius: 10px; 
   margin-top: 10px;
 
   display: flex;
@@ -76,15 +74,15 @@
   .sponsors {
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Espaçamento entre as categorias */
+    gap: 20px; 
   }
 
   .logo {
-    width: 120px; /* Ajuste para telas menores */
-    height: 70px; /* Ajuste para telas menores */
+    width: 120px; 
+    height: 70px; 
   }
 
   .tpatrocinio {
-    font-size: 24px; /* Ajuste para telas menores */
+    font-size: 24px; 
   }
 }
