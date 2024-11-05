@@ -11,11 +11,11 @@ export default function HomePage() {
   return (
     <div className="app_main">
       <Header />
+      
       <main>
         <EventSpotlight />
         <EventDetails />
         <EventTopics />
-        
         <PartnersSection />
       </main>
       <Footer />
