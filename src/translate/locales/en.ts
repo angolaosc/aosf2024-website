@@ -5,7 +5,7 @@ const locales = {
   en: {
     translations: {
       nav: {
-        link_1: 'Event',
+        link_1: 'Home',
         link_2: 'Information',
         link_3: 'Schedule',
         link_4: 'Sponsors',
@@ -44,27 +44,19 @@ const locales = {
             className: '',
           },
         ],
+        contagem : {
+          title: 'Countdown to the Event!',
+          days: 'Days',
+          hours: 'Hours',
+          minutes: 'Minutes',
+          seconds: 'Seconds'
+        }
       },
 
       section_2: {
-        details_List: [
-          {
-            icon: gup16,
-            title: 'PROJECT',
-            description:
-              "The Angola Open-Source Fest is a project that annually brings together professionals, students and technology enthusiasts in a space dedicated to exchanging knowledge and experiences about open source software. The event includes a series of activities such as lectures, workshops, hackathons, and practical sessions, all focused on empowering participants and promoting the development of innovative technological solutions.",
-          },
-          {
-            icon: gup22,
-            title: 'MISSION',
-            description:
-              "The mission of Angola Open-Source Fest is to foster a culture of collaboration and technological innovation in Angola, promoting the use and development of free and open source software. The festival seeks to democratize access to technological knowledge, empower the local community, and encourage the creation of sustainable solutions that respond to the country's specific needs.",
-          },
-        ],
-        detailStar: {
-          title: 'VALUES',
-          description: 'The Angola Open-Source Fest is an event that stands out as an important milestone for the technology community in Angola, bringing together developers, designers, engineers, and technology enthusiasts to celebrate and promote the use of free and open source software. This festival is not only a platform to share technical knowledge, but also a space that strengthens the fundamental values ​​that guide the open-source community in Angola.'
-,
+        detail: {
+          firstP: 'The Angola Open Source Fest is an event that celebrates innovation and collaboration in technology within Angola. Aimed at students, professionals, and open-source enthusiasts, the festival offers talks, workshops, and discussions focused on the development and application of open-source software in the Angolan context',
+          secondP: "It’s an opportunity to learn, share knowledge, and connect with the community, promoting the use of accessible and secure technologies. The event underscores a commitment to technological independence and the strengthening of Angola's digital ecosystem."
         },
       },
 

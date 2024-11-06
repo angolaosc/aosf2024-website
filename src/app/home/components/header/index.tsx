@@ -1,4 +1,4 @@
-'use client';
+
 import { i18n } from '@/translate/i18n';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';

@@ -56,7 +56,7 @@ const BallIcon: React.FC<IconInterface> = ({ pathIcon, link }) => {
 
 export default function Footer() {
   return (
-    <footer className="p-6" id="contacto">
+    <footer className="p-6 bg-background-page" id="contacto">
       <div className="full_container flex flex-col  w-full">
         <div className="grid grid-cols-1 paisagem-tablet:grid-cols-2 max-w-7xl m-auto w-full gap-5">
           <div className="flex justify-center"> 

@@ -1,6 +1,7 @@
 'use client';
 import OffCanvas from '../patrocine/components/Offcanvas';
 import Footer from '../shared/Footer';
+import { EventClock } from './components/event-clock/EventClock';
 import EventSpotlight from './components/event-spotlight';
 import EventDetails from './components/eventdetails/eventDetails';
 import EventTopics from './components/eventTopics/EventTopics';
@@ -14,6 +15,7 @@ export default function HomePage() {
       
       <main>
         <EventSpotlight />
+        <EventClock />
         <EventDetails />
         <EventTopics />
         <PartnersSection />

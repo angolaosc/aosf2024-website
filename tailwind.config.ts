@@ -27,16 +27,16 @@ const config: Config = {
         },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "custom-gradient": "linear-gradient(180deg, #182934 0%, #030B10 100%)"
       },
       colors: {
         'custom-dark' : '#111D25',
         'custom-color': '#213441',
         'workshop-color': '#00B0F9',
-        'palestra-color': "#FF6F66",
-        'barra-color': "#213441"
+        'palestra-color': '#FF6F66',
+        'barra-color': '#213441',
+        'background-page': '#030b10',
       }
     },
   },
