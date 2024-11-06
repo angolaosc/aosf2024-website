@@ -9,7 +9,7 @@ const PartnersSection = () => {
     <div className={container} id="partnersSection">
       <div className={barra}>
         <hr />
-        <h3 >{i18n.t('section_5.title')}</h3>
+        <h3>{i18n.t('section_5.title')}</h3>
         <hr />
       </div>
       <div className={sponsors}>

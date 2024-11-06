@@ -1,4 +1,3 @@
-'use client';
 import { i18n } from '@/translate/i18n';
 import Image from 'next/image';
 import { FiShoppingCart, FiYoutube } from 'react-icons/fi';
