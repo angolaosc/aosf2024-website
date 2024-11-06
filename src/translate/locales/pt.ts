@@ -5,7 +5,7 @@ const locales = {
   pt: {
     translations: {
       nav: {
-        link_1: 'Evento',
+        link_1: 'Inicio',
         link_2: 'Informações',
         link_3: 'Agenda',
         link_4: 'Patrocinadores',
@@ -44,28 +44,19 @@ const locales = {
             className: '',
           },
         ],
-        
+        contagem : {
+          title: 'Contagem Regressiva para o Evento!',
+          days: 'Dias',
+          hours: 'Horas',
+          minutes: 'Minutos',
+          seconds: 'Segundos'
+        }
       },
 
       section_2: {
-        details_List: [
-          {
-            icon: gup16,
-            title: 'PROJECTO',
-            description:
-              "O Angola Open-Source Fest é uma iniciativa anual que reúne profissionais, estudantes e entusiastas de tecnologia em Angola para um evento dedicado ao software de código aberto. Com palestras, workshops e hackathons, o festival capacita os participantes e promove o desenvolvimento de soluções tecnológicas inovadoras. O projeto também inclui atividades contínuas, como programas de mentoria e projetos colaborativos, que fortalecem a comunidade tecnológica local e incentivam a criação de soluções sustentáveis para o futuro de Angola.",
-          },
-          {
-            icon: gup22,
-            title: 'MISSÃO',
-            description:
-              'A missão do Angola Open-Source Fest é promover a inovação tecnológica em Angola, incentivando o uso de software livre e de código aberto. O evento busca democratizar o acesso ao conhecimento, capacitar a comunidade local e criar soluções tecnológicas que atendam às necessidades do país. Ao unir pessoas de diferentes áreas, o festival constrói uma comunidade inclusiva e diversificada, capaz de impulsionar o desenvolvimento social e econômico de Angola.',
-          },
-        ],
-        detailStar: {
-          title: 'VALORES',
-          description:'Os valores do Angola Open-Source Fest refletem o compromisso com a construção de uma comunidade tecnológica forte, inclusiva e inovadora em Angola. A colaboração e o trabalho em equipe são centrais, promovendo uma rede de apoio que incentiva a troca de ideias e experiências. O festival também valoriza o acesso ao conhecimento, acreditando que a tecnologia deve ser acessível a todos, independentemente de sua condição social. A inovação é outro valor fundamental, estimulando a criatividade e o progresso tecnológico por meio de soluções originais que podem transformar a sociedade. A inclusão e a diversidade são igualmente importantes, garantindo um ambiente acolhedor para todos, enquanto a sustentabilidade é promovida através de práticas que minimizam o impacto ambiental. Por fim, a autonomia e a independência tecnológica são encorajadas pelo uso de software open-source, capacitando a comunidade a desenvolver soluções que atendam às necessidades específicas de Angola, fortalecendo a soberania tecnológica do país. Esses valores guiam todas as atividades do festival, com o objetivo de posicionar Angola como um hub de inovação tecnológica na África.',
-
+        detail: {
+          firstP: 'O Angola Open Source Fest é um evento que celebra a inovação e a colaboração na área de tecnologia em Angola. Voltado para estudantes, profissionais e entusiastas de software livre, o festival promove palestras, oficinas e discussões sobre o desenvolvimento de software open source e sua aplicação no contexto angolano.',
+          secondP: "É uma oportunidade para aprender, trocar conhecimentos e conectar-se com a comunidade, além de incentivar o uso de tecnologias acessíveis e seguras. O evento reforça o compromisso com a independência tecnológica e o fortalecimento do ecossistema digital em Angola."
         },
       },
 

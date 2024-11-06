@@ -29,45 +29,48 @@ const EventSpotlight = () => {
   };
   
   return (
-    <div className={eventspotlight_container} id="eventspotlights">
-      <div className={eventspotlight_container_body_1} id="inicio">
-        <Image src={aosfest} width={470} height={148} alt="aosfest" />
-        <p className={eventspotlight_container_body_1_description}>{i18n.t('section_1.description')}</p>
+    <div className='bg-background-color'>
+        <div className={eventspotlight_container} id="eventspotlights">
+        <div className={eventspotlight_container_body_1} id="inicio">
+          <Image src={aosfest} width={470} height={148} alt="aosfest" />
+          <p className={eventspotlight_container_body_1_description}>{i18n.t('section_1.description')}</p>
 
-        <div className={eventspotlight_container_body_1_hero_1}>
-          <a
-            className={eventspotlight_container_body_1_hero_1_button_1}
-            onClick={handleClick}
-          >
-            {i18n.t('section_1.button1')} <FiShoppingCart color="#F892121" />
-          </a>
-          <a className={eventspotlight_container_body_1_hero_1_button_2} href="https://youtu.be/smzGyEPN8Zk?si=EKB-HiCAjvQVGENq">
-            {i18n.t('section_1.button2')} <FiYoutube color="#F892121" />
-          </a>
-        </div>
+          <div className={eventspotlight_container_body_1_hero_1}>
+            <a
+              className={eventspotlight_container_body_1_hero_1_button_1}
+              onClick={handleClick}
+            >
+              {i18n.t('section_1.button1')} <FiShoppingCart color="#F892121" />
+            </a>
+            <a className={eventspotlight_container_body_1_hero_1_button_2} href="https://youtu.be/smzGyEPN8Zk?si=EKB-HiCAjvQVGENq">
+              {i18n.t('section_1.button2')} <FiYoutube color="#F892121" />
+            </a>
+          </div>
 
-        <div className={eventspotlight_container_body_1_hero_2}>
-          <div className={eventspotlight_container_body_1_hero_2_card}>
-            <IoCalendarClearOutline />
-            <div>
-              <h2>{i18n.t('section_1.date.line_1')}</h2>
-              <p>{i18n.t('section_1.date.line_2')}</p>
+          <div className={eventspotlight_container_body_1_hero_2}>
+            <div className={eventspotlight_container_body_1_hero_2_card}>
+              <IoCalendarClearOutline />
+              <div>
+                <h2>{i18n.t('section_1.date.line_1')}</h2>
+                <p>{i18n.t('section_1.date.line_2')}</p>
+              </div>
+            </div>
+            <div className={eventspotlight_container_body_1_hero_2_seperator}></div>
+            <div className={eventspotlight_container_body_1_hero_2_card}>
+              <MdOutlineExplore />
+              <div>
+                <h2>Academia BAI</h2>
+                <p>Local</p>
+              </div>
             </div>
           </div>
-          <div className={eventspotlight_container_body_1_hero_2_seperator}></div>
-          <div className={eventspotlight_container_body_1_hero_2_card}>
-            <MdOutlineExplore />
-            <div>
-              <h2>Academia BAI</h2>
-              <p>Local</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div className={Spotlights} id="beneficios">
-        <SpotlightSlide spotlights={i18n.t('section_1.spotlights', {returnObjects: true})} /> {/* Adiciona o SpotlightSlide */}
+        <div className={Spotlights} id="beneficios">
+          <SpotlightSlide spotlights={i18n.t('section_1.spotlights', {returnObjects: true})} /> {/* Adiciona o SpotlightSlide */}
+        </div>
       </div>
     </div>
+    
   );
 };
 
