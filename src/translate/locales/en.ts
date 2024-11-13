@@ -72,12 +72,12 @@ const locales = {
         },
         topics: [
           {
-            tipo: 'Workshop',
-            foto: '/speakers/beneditoMonteiro.png',
-            titulo: 'How to implement ERP Opensource Odoo in your Company?',
+            tipo: 'Lecture',
+            foto: '/speakers/jeferson-fernando.png',
+            titulo: 'Platform Engineering: Delivering Infrastructure as a Product with Terraform',
             tempo: '09:00 - 10:30 GMT + 1',
-            orador: 'Benedito Monteiro',
-            descricaoOrador: 'Odoo System Consultant',
+            orador: 'Jeferson Fernando',
+            descricaoOrador: 'Fundador LINUXtips',
           },
           {
             tipo: 'Lecture',
@@ -94,6 +94,14 @@ const locales = {
             tempo: '09:00 - 10:30 GMT + 1',
             orador: 'Adilson Camacho',
             descricaoOrador: 'IT Consultant',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/beneditoMonteiro.png',
+            titulo: 'How to implement ERP Opensource Odoo in your Company?',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Benedito Monteiro',
+            descricaoOrador: 'Odoo System Consultant',
           },
           {
             tipo: 'Lecture',
@@ -119,7 +127,6 @@ const locales = {
             orador: 'Luís Rita',
             descricaoOrador: 'Software Engineer',
           },
-          
           {
             tipo: 'Lecture',
             foto: '/speakers/walterAngolar.png',
@@ -128,6 +135,30 @@ const locales = {
             orador: 'Walter Angolar',
             descricaoOrador: 'Technology Specialist',
           },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/anita-ihuman.jpg',
+            titulo: 'Building a Thriving DevRel Program for OSS Projects',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Anita Ihuman',
+            descricaoOrador: 'Developer Advocate, Technical writer',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/carmen-de-rafael-mateia.jpg',
+            titulo: 'Women in Technology: How to create, manage and sustain a female technology community',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Carmen de Rafel Mateia',
+            descricaoOrador: 'Associate Founder and Board Member at Associação Agitadores Culturais',
+          },
+          {
+            tipo: 'BOOTCAMP',
+            foto: '/speakers/adilsonfuta.jpg',
+            titulo: 'WEB DEVELOPMENT BOOTCAMP WITH OPEN-SOURCE TECHNOLOGIES',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Adilson Futa',
+            descricaoOrador: 'FullCycle Engineer na Jupiter Systems & Solutions',
+          }
         ],
       },
 

@@ -69,12 +69,12 @@ const locales = {
         },
         topics: [
           {
-            tipo: 'Workshop',
-            foto: '/speakers/beneditoMonteiro.png',
-            titulo: 'Como implementar o ERP Opensource Odoo em sua Empresa?',
+            tipo: 'Palestra',
+            foto: '/speakers/jeferson-fernando.png',
+            titulo: 'Engenharia de plataforma: entregando infraestrutura como um produto com Terraform',
             tempo: '09:00 - 10:30 GMT + 1',
-            orador: 'Benedito Monteiro',
-            descricaoOrador: 'Consultor de Sistema Odoo',
+            orador: 'Jeferson Fernando',
+            descricaoOrador: 'Fundador LINUXtips',
           },
           {
             tipo: 'Palestra',
@@ -87,15 +87,23 @@ const locales = {
           {
             tipo: 'Palestra',
             foto: '/speakers/adilsonCamacho.png',
-            titulo: 'Project Management in Tech',
+            titulo: 'Gerenciamento de projetos em tecnologia',
             tempo: '09:00 - 10:30 GMT + 1',
             orador: 'Adilson Camacho',
             descricaoOrador: 'Consultor de TI',
           },
           {
             tipo: 'Palestra',
+            foto: '/speakers/beneditoMonteiro.png',
+            titulo: 'Como implementar o ERP Opensource Odoo em sua Empresa?',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Benedito Monteiro',
+            descricaoOrador: 'Consultor de Sistema Odoo',
+          },
+          {
+            tipo: 'Palestra',
             foto: '/speakers/VijayValaboju.png',
-            titulo: 'Reinforcement Learning in Open-Source Education: Advancing Continuous Learning and Skill Development',
+            titulo: 'Aprendizagem por reforço na educação de código aberto: avançando na aprendizagem contínua e no desenvolvimento de habilidades',
             tempo: '09:00 - 10:30 GMT + 1',
             orador: 'Vijay Valaboju',
             descricaoOrador: 'Engenheiro de software sênior na Microsoft',
@@ -116,7 +124,6 @@ const locales = {
             orador: 'Luís Rita',
             descricaoOrador: 'Engenheiro de Software',
           },
-          
           {
             tipo: 'Palestra',
             foto: '/speakers/walterAngolar.png',
@@ -125,6 +132,30 @@ const locales = {
             orador: 'Walter Angolar',
             descricaoOrador: 'Especialista em Tecnologia',
           },
+          {
+            tipo: 'Palestra',
+            foto: '/speakers/anita-ihuman.jpg',
+            titulo: 'Construindo um programa DevRel próspero para projetos OSS',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Anita Ihuman',
+            descricaoOrador: 'Developer Advocate, Technical writer',
+          },
+          {
+            tipo: 'Palestra',
+            foto: '/speakers/carmen-de-rafael-mateia.jpg',
+            titulo: 'Mulheres na Tecnologia: Como criar, gerir e sustentar uma comunidade feminina de tecnologia',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Carmen de Rafel Mateia',
+            descricaoOrador: 'Fundador Associado e Membro do Conselho da Associação Agitadores Culturais',
+          },
+          {
+            tipo: 'BOOTCAMP',
+            foto: '/speakers/adilsonfuta.jpg',
+            titulo: 'BOOTCAMP DE DESENVOLVIMENTO WEB COM TECNOLOGIAS OPEN-SOURCE',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Adilson Futa',
+            descricaoOrador: 'FullCycle Engineer na Jupiter Systems & Solutions',
+          }
         ],
       },
 
