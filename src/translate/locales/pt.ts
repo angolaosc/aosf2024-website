@@ -116,7 +116,6 @@ const locales = {
             orador: 'Luís Rita',
             descricaoOrador: 'Engenheiro de Software',
           },
-          
           {
             tipo: 'Palestra',
             foto: '/speakers/walterAngolar.png',
@@ -124,6 +123,14 @@ const locales = {
             tempo: '09:00 - 10:30 GMT + 1',
             orador: 'Walter Angolar',
             descricaoOrador: 'Especialista em Tecnologia',
+          },
+          {
+            tipo: 'Palestra',
+            foto: '/speakers/anita-ihuman.jpg',
+            titulo: 'Building a Thriving DevRel Program for OSS Projects',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Anita Ihuman',
+            descricaoOrador: 'Developer Advocate, Technical writer',
           },
         ],
       },

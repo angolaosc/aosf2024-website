@@ -72,7 +72,15 @@ const locales = {
         },
         topics: [
           {
-            tipo: 'Workshop',
+            tipo: 'Lecture',
+            foto: '/speakers/jeferson-fernando.png',
+            titulo: 'Platform Engineering: Delivering Infrastructure as a Product with Terraform',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Jeferson Fernando',
+            descricaoOrador: 'LINUXtips Founder',
+          },
+          {
+            tipo: 'Lecture',
             foto: '/speakers/beneditoMonteiro.png',
             titulo: 'How to implement ERP Opensource Odoo in your Company?',
             tempo: '09:00 - 10:30 GMT + 1',
@@ -119,7 +127,6 @@ const locales = {
             orador: 'Luís Rita',
             descricaoOrador: 'Software Engineer',
           },
-          
           {
             tipo: 'Lecture',
             foto: '/speakers/walterAngolar.png',
@@ -128,6 +135,30 @@ const locales = {
             orador: 'Walter Angolar',
             descricaoOrador: 'Technology Specialist',
           },
+          {
+            tipo: 'Palestra',
+            foto: '/speakers/anita-ihuman.jpg',
+            titulo: 'Building a Thriving DevRel Program for OSS Projects',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Anita Ihuman',
+            descricaoOrador: 'Developer Advocate, Technical writer',
+          },
+          {
+            tipo: 'Palestra',
+            foto: '/speakers/carmen-de-rafael-mateia.jpg',
+            titulo: 'Mulheres na Tecnologia: Como criar, gerir e sustentar uma comunidade feminina de tecnologia',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Carmen de Rafel Mateia',
+            descricaoOrador: 'Associate Founder and Board Member at Associação Agitadores Culturais',
+          },
+          {
+            tipo: ' BOOTCAMP',
+            foto: '/speakers/carmen-de-rafael-mateia.jpg',
+            titulo: 'Mulheres na Tecnologia: Como criar, gerir e sustentar uma comunidade feminina de tecnologia',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Carmen de Rafel Mateia',
+            descricaoOrador: 'Associate Founder and Board Member at Associação Agitadores Culturais',
+          }
         ],
       },
 
