@@ -28,11 +28,6 @@ export const EventClock = () =>{
 
   return (
     <div className="flex flex-col items-center space-y-6">
-      <div className="flex flex-wrap items-center justify-center space-x-4 sm:space-x-8">
-        <Image src="/KINSARI_RGB 1.svg" className="logo Kinsari" alt="Kinsari Logo" width={140} height={60} />
-        <Image src="/CHAOSS AFRICA LOGO.svg" className="logo Typo3" alt={''} width={100} height={40}/>
-        <Image src="/typo3.png" className="logo Typo3" alt="Typo3 Logo" width={140} height={60} />
-      </div>
       <div className="flex flex-col items-center justify-center p-4 md:p-10 bg-transparent rounded-lg shadow-lg transition-all duration-300 w-full max-w-[800px]">
         <h2 className="text-palestra-color text-2xl sm:text-4xl font-bold mb-5 text-center">{i18n.t('section_1.contagem.title')}</h2>
         <div className="flex flex-wrap justify-center bg-custom-gradient rounded-[10px] p-2">

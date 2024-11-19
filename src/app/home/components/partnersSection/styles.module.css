@@ -1,4 +1,3 @@
-/* Estilos gerais */
 .container {
   margin-top: 100px;
   display: flex;
@@ -72,19 +71,18 @@
   height: 60px;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .sponsors {
     flex-direction: column;
     align-items: center;
-    /*gap: 20px; */
   }
 
   .logo {
     width: 120px; 
     height: 70px;
-    justify-content: center; /* Garante que a logo fique centralizada */
-    align-items: center; /* Garante o alinhamento central */
+    justify-content: center; 
+    align-items: center; 
     display: flex;
   }
 
@@ -95,9 +93,9 @@
   .silver {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Garante que o conteúdo na seção silver seja centralizado */
-    justify-content: center; /* Garante que a logo seja centralizada */
-    width: 100%; /* Garante que o contêiner ocupe a largura total */
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;  
   }
 }
 
