@@ -14,10 +14,10 @@ const Topics: EventTopics[] = i18n.t('section_3.topics', { returnObjects: true }
 const EventTopics = () => {
   return (
     <div className="font-poppins p-4 bg-background-page mt-10">
-      <div className="text-center mb-8">
+      <div className="text-center mb-8"id="topics">
         <div className="flex flex-row items-center gap-4 sm:gap-8 justify-center">
           <hr className="flex-1 my-2 border-t border-custom-color" />
-          <h1 className="text-2xl sm:text-3xl font-bold">{i18n.t('section_3.title')}</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold" >{i18n.t('section_3.title')}</h1>
           <hr className="flex-1 my-2 border-t border-custom-color" />
         </div>
         

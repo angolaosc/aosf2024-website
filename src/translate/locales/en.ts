@@ -59,10 +59,29 @@ const locales = {
           secondP: "It’s an opportunity to learn, share knowledge, and connect with the community, promoting the use of accessible and secure technologies. The event underscores a commitment to technological independence and the strengthening of Angola's digital ecosystem."
         },
       },
-
+      keynotes: [
+        {
+          Img : "/keynoteSpeakers/euclides-mfumu.jpg",
+          Nome: "Miguel Araújo",
+          Descricao: "Kinsari - Sistemas de Informaçãoa"
+        },
+        {
+          Img : "/keynoteSpeakers/daniel-homorodean.jpg",
+          Nome: "Daniel Homorodean",
+          Descricao: "Typo3 Association"
+        },
+        {
+          Img : "/keynoteSpeakers/euclides-mfumu.jpg",
+          Nome: "Euclides Mfumu",
+          Descricao: "Data Science, Standard Bank Angola"
+        },
+        {
+          Img : "/keynoteSpeakers/matias-perazoli.jpg",
+          Nome: "Matias Perazoli",
+          Descricao: "ETIC"
+        }
+      ],
     
-      
-
       section_3: {
         title: 'Our Speakers',
         description: 'Saturday, 30 of Novembro - 2024',
@@ -134,14 +153,6 @@ const locales = {
             tempo: '09:00 - 10:30 GMT + 1',
             orador: 'Walter Angolar',
             descricaoOrador: 'Technology Specialist',
-          },
-          {
-            tipo: 'Lecture',
-            foto: '/speakers/anita-ihuman.jpg',
-            titulo: 'Building a Thriving DevRel Program for OSS Projects',
-            tempo: '09:00 - 10:30 GMT + 1',
-            orador: 'Anita Ihuman',
-            descricaoOrador: 'Developer Advocate, Technical writer',
           },
           {
             tipo: 'Lecture',

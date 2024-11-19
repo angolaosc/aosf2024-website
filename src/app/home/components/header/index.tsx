@@ -90,7 +90,7 @@ export default function Header() {
               </li>
               <li>
                 <ScrollLink href="#guia">{i18n.t('nav.link_3')}</ScrollLink>
-              </li>
+              </li> 
               <li>
                 <ScrollLink href="#partnersSection">{i18n.t('nav.link_4')}</ScrollLink>
               </li>

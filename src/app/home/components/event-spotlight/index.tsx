@@ -58,7 +58,7 @@ const EventSpotlight = () => {
             <div className={eventspotlight_container_body_1_hero_2_card}>
               <MdOutlineExplore />
               <div>
-                <h2>Academia BAI</h2>
+                <h2>Instituto Sapiens</h2>
                 <p>Local</p>
               </div>
             </div>
