@@ -66,6 +66,11 @@ const locales = {
           Descricao: "Kinsari - Sistemas de Informaçãoa"
         },
         {
+          Img : "/keynoteSpeakers/daniel-homorodean.jpg",
+          Nome: "Daniel Homorodean",
+          Descricao: "Typo3 Association"
+        },
+        {
           Img : "/keynoteSpeakers/euclides-mfumu.jpg",
           Nome: "Euclides Mfumu",
           Descricao: "Data Science, Standard Bank Angola"
