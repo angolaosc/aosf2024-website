@@ -36,6 +36,7 @@ const PartnersSection = () => {
         <div className={silver}>
           <h3 className={tpatrocinio}>Silver</h3>
           <div className={logo}>
+            <Image src="/CHAOSS AFRICA LOGO.svg" className="logo Typo3" alt={''} width={120} height={60}/>
             <Image src="/typo3.png" className="logo Typo3" alt={''} width={140} height={60}/>
           </div>
         </div>
