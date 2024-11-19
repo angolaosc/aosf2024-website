@@ -82,10 +82,22 @@
 
   .logo {
     width: 120px; 
-    height: 70px; 
+    height: 70px;
+    justify-content: center; /* Garante que a logo fique centralizada */
+    align-items: center; /* Garante o alinhamento central */
+    display: flex;
   }
 
   .tpatrocinio {
-    font-size: 24px; 
+    font-size: 24px;
+  }
+
+  .silver {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garante que o conteúdo na seção silver seja centralizado */
+    justify-content: center; /* Garante que a logo seja centralizada */
+    width: 100%; /* Garante que o contêiner ocupe a largura total */
   }
 }
+
