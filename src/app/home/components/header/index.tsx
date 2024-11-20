@@ -71,7 +71,7 @@ export default function Header() {
         className={classNames(
           'header z-20 bg-[#030B10] transition-all fixed top-0 left-0 right-0 py-4 m-auto items-center flex px-4 justify-between w-full border-b border-[#111D25]',
           {
-            'max-w-7xl': !isScrolled,
+            'max-w-[1500px]': !isScrolled,
             'max-w-full': isScrolled,
           }
         )}

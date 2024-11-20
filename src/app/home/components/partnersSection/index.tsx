@@ -19,7 +19,7 @@ const PartnersSection = () => {
           <div className="flex justify-center">
             <div className="flex items-center justify-center bg-[#F7F7F7] rounded-lg p-4 shadow-md w-36 h-16">
               <Image
-                src="/KINSARI_RGB 1.svg"
+                src="/sponsors/KINSARI_RGB 1.svg"
                 alt="Kinsari"
                 width={140}
                 height={60}
@@ -34,7 +34,7 @@ const PartnersSection = () => {
           <div className="flex justify-center flex-wrap gap-4">
             <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
               <Image
-                src="/angolaCables.png"
+                src="/sponsors/angolaCables.png"
                 alt="Angola Cables"
                 width={140}
                 height={60}
@@ -43,7 +43,7 @@ const PartnersSection = () => {
             </div>
             <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
               <Image
-                src="/CHAOSS AFRICA LOGO.svg"
+                src="/sponsors/CHAOSS AFRICA LOGO.svg"
                 alt="CHAOSS Africa"
                 width={140}
                 height={60}
@@ -52,7 +52,7 @@ const PartnersSection = () => {
             </div>
             <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
               <Image
-                src="/typo3.png"
+                src="/sponsors/typo3.png"
                 alt="TYPO3"
                 width={140}
                 height={60}
