@@ -59,10 +59,29 @@ const locales = {
           secondP: "It’s an opportunity to learn, share knowledge, and connect with the community, promoting the use of accessible and secure technologies. The event underscores a commitment to technological independence and the strengthening of Angola's digital ecosystem."
         },
       },
-
+      keynotes: [
+        {
+          Img : "/keynoteSpeakers/euclides-mfumu.jpg",
+          Nome: "Miguel Araújo",
+          Descricao: "Kinsari - Sistemas de Informaçãoa"
+        },
+        {
+          Img : "/keynoteSpeakers/daniel-homorodean.jpg",
+          Nome: "Daniel Homorodean",
+          Descricao: "Typo3 Association"
+        },
+        {
+          Img : "/keynoteSpeakers/euclides-mfumu.jpg",
+          Nome: "Euclides Mfumu",
+          Descricao: "Data Science, Standard Bank Angola"
+        },
+        {
+          Img : "/keynoteSpeakers/matias-perazoli.jpg",
+          Nome: "Matias Perazoli",
+          Descricao: "ETIC"
+        }
+      ],
     
-      
-
       section_3: {
         title: 'Our Speakers',
         description: 'Saturday, 30 of Novembro - 2024',
@@ -77,7 +96,7 @@ const locales = {
             titulo: 'Platform Engineering: Delivering Infrastructure as a Product with Terraform',
             tempo: '09:00 - 10:30 GMT + 1',
             orador: 'Jeferson Fernando',
-            descricaoOrador: 'Fundador LINUXtips',
+            descricaoOrador: 'Founder LINUXtips',
           },
           {
             tipo: 'Lecture',
@@ -136,12 +155,36 @@ const locales = {
             descricaoOrador: 'Technology Specialist',
           },
           {
-            tipo: 'Lecture',
-            foto: '/speakers/anita-ihuman.jpg',
-            titulo: 'Building a Thriving DevRel Program for OSS Projects',
+            tipo: 'BOOTCAMP',
+            foto: '/speakers/adilsonfuta.jpg',
+            titulo: 'WEB DEVELOPMENT BOOTCAMP WITH OPEN-SOURCE TECHNOLOGIES',
             tempo: '09:00 - 10:30 GMT + 1',
-            orador: 'Anita Ihuman',
-            descricaoOrador: 'Developer Advocate, Technical writer',
+            orador: 'Adilson Futa',
+            descricaoOrador: 'FullCycle Engineer na Jupiter Systems & Solutions',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/machado-antonio.jpg',
+            titulo: 'Java in the Cloud-Native Era - Developing Scalable and Resilient Applications',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Machado Antonio',
+            descricaoOrador: 'Tis - Analista Funcional',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/elisio-mualumene.jpg',
+            titulo: 'Soluções AWS para Armazenamento e Bancos de Dados',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Elísio Mualumene',
+            descricaoOrador: 'Cloud Solution Architect & Software Engineer',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/ildeberto-vasconcelos.jpg',
+            titulo: 'Flutter Add-to-App e Interoperabilidade com Nativo',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Ildeberto Vasconcelos',
+            descricaoOrador: 'Flutter Developer | Open Source Contributor',
           },
           {
             tipo: 'Lecture',
@@ -152,13 +195,101 @@ const locales = {
             descricaoOrador: 'Associate Founder and Board Member at Associação Agitadores Culturais',
           },
           {
-            tipo: 'BOOTCAMP',
-            foto: '/speakers/adilsonfuta.jpg',
-            titulo: 'WEB DEVELOPMENT BOOTCAMP WITH OPEN-SOURCE TECHNOLOGIES',
+            tipo: 'Lecture',
+            foto: '/speakers/gustavo-mota.jpg',
+            titulo: 'Cloud Disaster Recovery Strategies: How Azure Site Recovery Can Save Your Business',
             tempo: '09:00 - 10:30 GMT + 1',
-            orador: 'Adilson Futa',
-            descricaoOrador: 'FullCycle Engineer na Jupiter Systems & Solutions',
-          }
+            orador: 'Gustavo Mota',
+            descricaoOrador: 'Cloud Architect | 8x Azure Certified | Writer | Technology Content Creator | Head of cloud and Infrastructure at Forward Computers | Founder of the @gugacloud Community',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/domingos-dias-francisco.jpg',
+            titulo: 'Process orchestration with automation and AI',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Domingos Dias Francisco',
+            descricaoOrador: 'SELENIUM, Developer',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/gideao-ferreira.jpg',
+            titulo: 'Efficient Development with Laravel: best practices for Scalable projects',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Gideão Ferreira',
+            descricaoOrador: 'Devtest, desenvolvedor',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/joao-afonso-katombela.jpg',
+            titulo: 'Software Development',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Joao Afonso Katombela',
+            descricaoOrador: 'FullStack Developer @RCS Angola',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/jovany-azevedo.jpg',
+            titulo: 'Licenses in the Open Source world',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Jovany Azevedo',
+            descricaoOrador: ' Computer e Automatic Services, Técnico de Sistemas de T.I ',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/martins-gouveia.jpg',
+            titulo: 'Cross-platform apps com Swift e SwiftUI',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Martins Gouveia',
+            descricaoOrador: 'Software Developer @Directv',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/miguel-gaieta-de-almeida.jpg',
+            titulo: 'Implementing Multitenancy with Laravel',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Miguel Gaieta de Almeida',
+            descricaoOrador: 'Backend Developer | CTO ',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/matias-fernandes-hashirama.jpg',
+            titulo: 'Dev Shinobi: Chapter 1 - API Evangelist: API: The True User Interface for the Programmer',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Matias Fernandes Hashirama',
+            descricaoOrador: 'Backend Developer',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/nagarjuna-malladi.jpg',
+            titulo: 'Building Resilient Open-Source Systems: Advanced Site Reliability Engineering Practices',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Nagarjuna Malladi',
+            descricaoOrador: 'Principal Software Engineer SRE at Oracle America, Inc.',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/nerias-de-almeida.png',
+            titulo: 'Cloud Computing e seu impacto no desenvolvimento, ecosistema empresarial angolano',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Nerias de Almeida',
+            descricaoOrador: 'IDIMA TECH SOLUTIONS - ENG. INFORMATICO',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/otoniel-emanuel.jpg',
+            titulo: 'Minimalism in Web Design',
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Otoniel Emanuel',
+            descricaoOrador: 'Front-end developer and open source enthusiast',
+          },
+          {
+            tipo: 'Lecture',
+            foto: '/speakers/tilson-mateus.jpg',
+            titulo: "Exploring Laravel's Super Powers",
+            tempo: '09:00 - 10:30 GMT + 1',
+            orador: 'Tilson Mateus',
+            descricaoOrador: 'FullStack Developer @TilsonM17',
+          },
         ],
       },
 

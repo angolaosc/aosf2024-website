@@ -1,4 +1,3 @@
-/* Estilos gerais */
 .container {
   margin-top: 100px;
   display: flex;
@@ -72,20 +71,31 @@
   height: 60px;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .sponsors {
     flex-direction: column;
     align-items: center;
-    gap: 20px; 
   }
 
   .logo {
     width: 120px; 
-    height: 70px; 
+    height: 70px;
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
   }
 
   .tpatrocinio {
-    font-size: 24px; 
+    font-size: 24px;
+  }
+
+  .silver {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;  
   }
 }
+

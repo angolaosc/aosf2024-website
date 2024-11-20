@@ -37,7 +37,7 @@ const EventTopics = () => {
                 <hr className="my-3 sm:my-4 border-t border-custom-color" />
                 
                 <div className="flex flex-row items-center space-x-3 sm:space-x-4">
-                  <Image src={topic.foto} alt={topic.orador} width={55} height={55} className="rounded-full object-cover" />
+                  <Image src={topic.foto} alt={topic.orador} width={55} height={55} className="rounded-full object-cover w-[55px] h-[55px]" />
                   
                   <div className="flex flex-col">
                     <div className="text-base sm:text-[20px] text-white font-bold">{topic.orador}</div>
