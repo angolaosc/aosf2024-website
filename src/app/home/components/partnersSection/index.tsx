@@ -1,48 +1,67 @@
-'use-client';
-import styles from './styles.module.css';
+'use client';
 import Image from 'next/image';
 import { i18n } from '@/translate/i18n';
+
 const PartnersSection = () => {
-  const { container, sponsors, tpatrocinio, barra, platinum, gold, silver, logo } = styles;
-
   return (
-    <div className={container} id="partnersSection">
-      <div className={barra}>
-        <hr />
-        <h3>{i18n.t('section_5.title')}</h3>
-        <hr />
+    <div className="mt-16 mb-16 flex flex-col items-center  px-4">
+
+      <div className="flex items-center w-full max-w-6xl">
+        <hr className="flex-1 border-gray-700" />
+        <h3 className="mx-4 text-lg font-bold text-orange-600">{i18n.t('section_5.title')}</h3>
+        <hr className="flex-1 border-gray-700" />
       </div>
-      <div className={sponsors}>
-      
-        <div className={platinum}>
-          <h3 className={tpatrocinio}>Platinum</h3>
-          <div className={logo}>
-            <Image src="/KINSARI_RGB 1.svg" className="logo Kinsari" alt={''} width={140} height={60}/>
+
+
+      <div className="mt-8 w-full max-w-6xl">
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-gray-200 text-center mb-4">Platinum</h3>
+          <div className="flex justify-center">
+            <div className="flex items-center justify-center bg-[#F7F7F7] rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/KINSARI_RGB 1.svg"
+                alt="Kinsari"
+                width={140}
+                height={60}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
 
-        {
-          /*
-            <div className={gold}>
-              <h3 className={tpatrocinio}>Gold</h3>
-              <div className={logo}>
-                
-              </div>
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-gray-200 text-center mb-4">Silver</h3>
+          <div className="flex justify-center flex-wrap gap-4">
+            <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/angolaCables.png"
+                alt="Angola Cables"
+                width={140}
+                height={60}
+                className="object-contain"
+              />
             </div>
-          */
-        }
-        
-        
-        <div className={silver}>
-          <h3 className={tpatrocinio}>Silver</h3>
-          <div className={logo}>
-            <Image src="/CHAOSS AFRICA LOGO.svg" className="logo Typo3" alt={''} width={120} height={60}/>
-            <Image src="/typo3.png" className="logo Typo3" alt={''} width={140} height={60}/>
+            <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/CHAOSS AFRICA LOGO.svg"
+                alt="CHAOSS Africa"
+                width={140}
+                height={60}
+                className="object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/typo3.png"
+                alt="TYPO3"
+                width={140}
+                height={60}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
-      
       </div>
-      
     </div>
   );
 };
