@@ -68,12 +68,12 @@ export default function Footer() {
               {/* INFO */}
               <div className="pt-5">
                 <a href="#" className="text-white transition-all hover:underline">
-                  info@angolaosc.org
+                  angolaopensourcefoundation@gmail.com
                 </a>
                 <div className="flex items-center flex-wrap gap-4 pt-4">
-                  <p className="text-white">+244 936 853 728 </p>
+                  <p className="text-white">+244 933 428 646</p>
                   <p className="text-zinc-300">|</p>
-                  <p className="text-white">+244 934 526 466</p>
+                  <p className="text-white">+244 936 853 728</p>
                 </div>
               </div>
             </div>
