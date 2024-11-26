@@ -23,6 +23,7 @@
   color: white;
 }
 
+
 /* Mobile Menu */
 .header .container_area .mobile_menu {
   position: absolute;
@@ -150,6 +151,6 @@
 /* Box Button */
 .boxButton {
   display: flex;
-  align-items: center;
+  align-items: center;       
   gap: 24px;
 }
