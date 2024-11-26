@@ -28,7 +28,8 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "custom-gradient": "linear-gradient(180deg, #182934 0%, #030B10 100%)"
+        "custom-gradient": "linear-gradient(180deg, #182934 0%, #030B10 100%)",
+        "keynoteSpeakers-gradient": "linear-gradient(90deg, #f84438 0%, #0c141a 70%)"
       },
       colors: {
         'custom-dark' : '#111D25',

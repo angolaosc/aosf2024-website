@@ -81,6 +81,7 @@ const locales = {
           Descricao: "TYPO3 Association Board Member"
         },
       ],
+      keynotesDescription: "Highlights of the event, bringing a unique and innovative perspective",
     
       section_3: {
         title: 'Our Speakers',

@@ -4,12 +4,29 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-
 interface Keynote {
   Img: string;
   Nome: string;
   Descricao: string;
 }
+
+interface StepIndicatorProps {
+  currentStep: number;
+  totalSteps: number;
+}
+
+const StepIndicator = ({ currentStep, totalSteps }: StepIndicatorProps) => {
+  return (
+    <div className="flex justify-center gap-2 mt-4">
+      {Array.from({ length: totalSteps }, (_, index) => (
+        <div
+          key={index}
+          className={`w-4 h-4 rounded-full ${index == currentStep ? 'bg-blue-500' : 'bg-gray-300'}`}
+        />
+      ))}
+    </div>
+  );
+};
 
 const keynotes: Keynote[] = i18n.t('keynotes', { returnObjects: true });
 
@@ -17,9 +34,9 @@ export function EventKeynotes() {
   return (
     <div className="font-poppins p-4 mt-10 ">
       <div className="text-center mb-8" id="keynotes">
-        <h1 className="text-3xl font-bold">Keynote Speakers</h1>
+        <h1 className="text-3xl font-bold bg-keynoteSpeakers-gradient">Keynote Speakers</h1>
         <h2 className="text-base sm:text-xl text-gray-600 mt-4">
-          Destaques do evento, trazendo uma perspectiva única e inovadora.
+          {i18n.t('keynotesDescription')}
         </h2>
       </div>
 
@@ -37,7 +54,7 @@ export function EventKeynotes() {
           {keynotes.map((keynote, index) => (
             <SwiperSlide key={index}>
               <div className="relative bg-gradient-to-r from-[#1F2937] to-[#4B5563] rounded-lg p-6 text-white shadow-lg flex flex-col items-center mt-[40px]">
-                <div className="absolute -top-10 w-[108px] h-[108px] bg-[#38BDF8] rounded-full flex items-center justify-center">
+                <div className="absolute -top-10 w-[108px] h-[108px] bg-keynoteSpeakers-gradient rounded-full flex items-center justify-center">
                   <Image
                     src={keynote.Img}
                     alt={keynote.Nome}
@@ -51,6 +68,8 @@ export function EventKeynotes() {
                   <p className="text-sm text-gray-300 mt-2">{keynote.Descricao}</p>
                 </div>
               </div>
+              {/* StepIndicator aparece apenas no mobile */}
+              <StepIndicator currentStep={index} totalSteps={keynotes.length} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -63,7 +82,7 @@ export function EventKeynotes() {
             key={index}
             className="relative bg-gradient-to-r from-[#1F2937] to-[#4B5563] rounded-lg p-6 text-white shadow-lg w-[300px] flex flex-col items-center"
           >
-            <div className="absolute -top-10 w-[108px] h-[108px] bg-[#38BDF8] rounded-full flex items-center justify-center">
+            <div className="absolute -top-10 w-[108px] h-[108px] bg-keynoteSpeakers-gradient rounded-full flex items-center justify-center">
               <Image
                 src={keynote.Img}
                 alt={keynote.Nome}
@@ -82,3 +101,4 @@ export function EventKeynotes() {
     </div>
   );
 }
+  

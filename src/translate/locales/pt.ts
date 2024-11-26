@@ -60,15 +60,15 @@ const locales = {
         },
       },
       keynotes: [
-        {
-          Img : "/keynoteSpeakers/miguel-araujo.jpg",
+        /*{
+          Img : "/keynoteSpeakers/euclides-mfumu.jpg",
           Nome: "Miguel Araújo",
           Descricao: "Kinsari - Sistemas de Informaçãoa"
-        },
+        },*/
         {
-          Img : "/keynoteSpeakers/daniel-homorodean.jpg",
-          Nome: "Daniel Homorodean",
-          Descricao: "Typo3 Association"
+          Img : "/keynoteSpeakers/matias-perazoli.jpg",
+          Nome: "Matias Perazoli",
+          Descricao: "ETIC"
         },
         {
           Img : "/keynoteSpeakers/euclides-mfumu.jpg",
@@ -76,11 +76,12 @@ const locales = {
           Descricao: "Data Science, Standard Bank Angola"
         },
         {
-          Img : "/keynoteSpeakers/matias-perazoli.jpg",
-          Nome: "Matias Perazoli",
-          Descricao: "ETIC"
-        }
+          Img : "/keynoteSpeakers/mathias-bolt-lesniak.jpg",
+          Nome: "Mathias Bolt Lesniak",
+          Descricao: "TYPO3 Association Board Member"
+        },
       ],
+      keynotesDescription: "Destaques do evento, trazendo uma perspectiva única e inovadora.",
       section_3: {
         title: 'Nossos Palestrantes',
         description: 'Sábado, 30 de Novembro - 2024',
