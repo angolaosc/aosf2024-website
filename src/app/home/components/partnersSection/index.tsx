@@ -59,6 +59,15 @@ const PartnersSection = () => {
                 className="object-contain"
               />
             </div>
+            <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/sponsors/etic.png"
+                alt="Etic"
+                width={100}
+                height={40}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
