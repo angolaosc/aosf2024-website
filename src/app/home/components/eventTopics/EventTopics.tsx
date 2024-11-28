@@ -25,7 +25,7 @@ const EventTopics = () => {
         <div className="text-center">
           <h2 className="text-base sm:text-xl text-gray-600 mt-4">{i18n.t('section_3.description')}</h2>
           <div className="flex justify-center items-center gap-6 bg-keynoteSpeakers-gradient w-[200px] h-[40px] rounded-[30px] mx-auto mt-4">
-            <a href={'/agenda'} className="text-white">Ver Agenda</a>
+            <a href={'https://aosfest2024.sessionize.com/schedule'} className="text-white">Ver Agenda</a>
           </div>
         </div>
 

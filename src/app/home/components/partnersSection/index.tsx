@@ -17,7 +17,7 @@ const PartnersSection = () => {
         <div className="mb-8">
           <h3 className="text-xl font-bold text-gray-200 text-center mb-4">Platinum</h3>
           <div className="flex justify-center">
-            <div className="flex items-center justify-center bg-[#F7F7F7] rounded-lg p-4 shadow-md w-36 h-16">
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
               <Image
                 src="/sponsors/KINSARI_RGB 1.svg"
                 alt="Kinsari"
@@ -32,7 +32,7 @@ const PartnersSection = () => {
         <div className="mb-8">
           <h3 className="text-xl font-bold text-gray-200 text-center mb-4">Silver</h3>
           <div className="flex justify-center flex-wrap gap-4">
-            <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
               <Image
                 src="/sponsors/angolaCables.png"
                 alt="Angola Cables"
@@ -41,7 +41,7 @@ const PartnersSection = () => {
                 className="object-contain"
               />
             </div>
-            <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
               <Image
                 src="/sponsors/CHAOSS AFRICA LOGO.svg"
                 alt="CHAOSS Africa"
@@ -50,17 +50,54 @@ const PartnersSection = () => {
                 className="object-contain"
               />
             </div>
-            <div className="flex items-center justify-center bg-[#C0C0C0] rounded-lg p-4 shadow-md w-36 h-16">
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
               <Image
                 src="/sponsors/typo3.png"
                 alt="TYPO3"
-                width={140}
-                height={60}
+                width={160}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/sponsors/etic.png"
+                alt="Etic"
+                width={100}
+                height={40}
                 className="object-contain"
               />
             </div>
           </div>
         </div>
+
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-gray-200 text-center mb-4">Comunidades</h3>
+          <div className="flex justify-center flex-wrap gap-4">
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/communities/cdagirls.png"
+                alt="CDA Girls"
+                width={260}
+                height={150}
+                className="object-contain"
+              />
+            </div>
+
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/communities/nfl.png"
+                alt="CDA Girls"
+                width={160}
+                height={90}
+                className="object-contain"
+              />
+            </div>
+            
+            
+          </div>
+        </div>
+
       </div>
     </div>
   );
