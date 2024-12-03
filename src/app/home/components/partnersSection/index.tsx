@@ -29,6 +29,25 @@ const PartnersSection = () => {
           </div>
         </div>
 
+        <div className="flex items-center w-full max-w-6xl">
+          <hr className="flex-1 border-gray-700" />
+          <h3 className="mx-4 text-lg font-bold text-gray-700">Gold Sponsor</h3>
+          <hr className="flex-1 border-gray-700" />
+        </div>
+        <div className="mb-8">
+          <div className="flex justify-center">
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/sponsors/typo3.png"
+                alt="TYPO3"
+                width={160}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="mb-8">
           <div className="flex items-center w-full max-w-6xl">
             <hr className="flex-1 border-gray-700" />
@@ -56,19 +75,10 @@ const PartnersSection = () => {
             </div>
             <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
               <Image
-                src="/sponsors/typo3.png"
-                alt="TYPO3"
-                width={160}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
-              <Image
                 src="/sponsors/etic.png"
                 alt="Etic"
-                width={100}
-                height={40}
+                width={125}
+                height={60}
                 className="object-contain"
               />
             </div>
@@ -95,7 +105,7 @@ const PartnersSection = () => {
             <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
               <Image
                 src="/communities/nfl.png"
-                alt="CDA Girls"
+                alt="Nfl "
                 width={160}
                 height={90}
                 className="object-contain"
@@ -105,13 +115,22 @@ const PartnersSection = () => {
             <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
               <Image
                 src="/communities/Usergroups-logo_main.png"
-                alt="CDA Girls"
+                alt="User groups"
                 width={160}
                 height={90}
                 className="object-contain"
               />
             </div>
 
+            <div className="flex items-center justify-center  rounded-lg p-4 shadow-md w-36 h-16">
+              <Image
+                src="/communities/uxpansive.png"
+                alt="UXPANSIVE"
+                width={160}
+                height={90}
+                className="object-contain"
+              />
+            </div>
 
 
           </div>
