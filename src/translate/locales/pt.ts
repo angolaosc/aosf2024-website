@@ -16,8 +16,8 @@ const locales = {
         title: 'Angola Open-source Fest 2024',
         description:
           'Prepare-se para mergulhar em debates, workshops e descobertas que impulsionarão a inovação e o progresso na comunidade de programação de Angola. Junte-se a nós nessa jornada de aprendizado e colaboração.',
-        button1: 'Comprar Ingresso',
-        button2: 'Assistir AOSFest 2023 Online',
+        button1: 'Ver fotos',
+        button2: 'Ver apresentações',
         toastMessage: 'Em breve estará disponível',
         closeButton: "Fechar",
         date: {
@@ -45,11 +45,9 @@ const locales = {
           },
         ],
         contagem : {
-          title: 'Contagem Regressiva para o Evento!',
-          days: 'Dias',
-          hours: 'Horas',
-          minutes: 'Minutos',
-          seconds: 'Segundos'
+          speakers: 'Sessões',
+          participants: 'Participantes',
+          partners: 'Parceiros'
         }
       },
 
@@ -301,6 +299,7 @@ const locales = {
 
       section_5: {
         title: 'Patrocinadores',
+        community: 'Comunidades'
       },
       section_6: {
         title: 'Patrocinadores',

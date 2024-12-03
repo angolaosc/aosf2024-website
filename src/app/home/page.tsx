@@ -15,10 +15,11 @@ export default function HomePage() {
       <Header />
       
       <main>
-        <EventSpotlight /><EventKeynotes />
+        <EventSpotlight />
+        
         {/*<EventClock />*/}
         <EventDetails />
-        
+        <EventKeynotes />
         <EventTopics />
         <PartnersSection />
       </main>

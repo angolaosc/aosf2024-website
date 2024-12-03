@@ -32,7 +32,7 @@ const keynotes: Keynote[] = i18n.t('keynotes', { returnObjects: true });
 
 export function EventKeynotes() {
   return (
-    <div className="font-poppins p-4 mt-[0px] ">
+    <div className="font-poppins p-4 mt-[15px] ">
       <div className="text-center mb-8" id="keynotes">
         <h1 className="text-3xl font-bold bg-keynoteSpeakers-gradient">Keynote Speakers</h1>
         <h2 className="text-base sm:text-xl text-gray-600 mt-4">

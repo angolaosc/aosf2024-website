@@ -16,8 +16,8 @@ const locales = {
         title: 'Angola Open-source Fest 2024',
         description:
           'Get ready to dive into debates, workshops, and discoveries that will drive innovation and progress in the Angolan programming community. Join us on this journey of learning and collaboration.',
-        button1: 'Buy a Ticket',
-        button2: 'Watch AOSFest 2023 Online',
+        button1: 'View photos',
+        button2: 'View presentations',
         toastMessage: 'Coming soon',
         closeButton: "Close",
         date: {
@@ -45,11 +45,9 @@ const locales = {
           },
         ],
         contagem : {
-          title: 'Countdown to the Event!',
-          days: 'Days',
-          hours: 'Hours',
-          minutes: 'Minutes',
-          seconds: 'Seconds'
+          speakers: 'Sessions',
+          participants: 'Particants',
+          partners: 'Partners'
         }
       },
 
@@ -59,6 +57,7 @@ const locales = {
           secondP: "It’s an opportunity to learn, share knowledge, and connect with the community, promoting the use of accessible and secure technologies. The event underscores a commitment to technological independence and the strengthening of Angola's digital ecosystem."
         },
       },
+      
       keynotes: [
         /*{
           Img : "/keynoteSpeakers/euclides-mfumu.jpg",
@@ -301,6 +300,7 @@ const locales = {
 
       section_5: {
         title: 'Our Partners',
+        community: 'Communities'
       },
       section_6: {
         title: 'Sponsors',
