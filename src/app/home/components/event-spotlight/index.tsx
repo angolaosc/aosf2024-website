@@ -75,14 +75,14 @@ const EventSpotlight = () => {
   return (
     <div className="bg-background-color">
       <div className={eventspotlight_container} id="eventspotlights">
-        {/* Cabeçalho e descrição */}
+        
         <div className={eventspotlight_container_body_1} id="inicio">
           <Image src={aosfest} width={470} height={148} alt="AOS Fest logo" />
           <p className={eventspotlight_container_body_1_description}>
             {i18n.t('section_1.description')}
           </p>
 
-          {/* Botões principais */}
+          
           <div className={eventspotlight_container_body_1_hero_1}>
             <button
               className={eventspotlight_container_body_1_hero_1_button_1}
@@ -102,7 +102,7 @@ const EventSpotlight = () => {
             </a>
           </div>
 
-          {/* Detalhes do evento */}
+          
           <div className={eventspotlight_container_body_1_hero_2}>
             <div className={eventspotlight_container_body_1_hero_2_card}>
               <IoCalendarClearOutline />
